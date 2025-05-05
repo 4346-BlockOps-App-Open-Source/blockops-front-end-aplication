@@ -42,12 +42,13 @@
 .pricing-section {
   padding: 60px 20px;
   text-align: center;
+  background-color: #f9f9f9;
 }
 
 .pricing-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center; /* Centrar los elementos */
   gap: 20px;
   margin-top: 20px;
 }
@@ -55,10 +56,11 @@
 .card {
   background-color: white;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 250px;
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .card:hover {
@@ -141,7 +143,7 @@
   padding: 15px;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .whatsapp-float img {

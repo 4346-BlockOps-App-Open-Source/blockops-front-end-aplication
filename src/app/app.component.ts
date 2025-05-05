@@ -16,17 +16,24 @@ export class AppComponent {
     message: ''
   };
 
-  onStartFree() {
-    alert('¡Bienvenido a Capitalent! Empieza gratis hoy.');
+  onStartNow() {
+    alert('Bienvenido a Capitalent, empieza gratis ahora.');
   }
 
-  onSubmitContact() {
+  scrollToSection(sectionId: string) {
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
+  onContactSubmit() {
     const { name, email, message } = this.contact;
     if (name && email && message) {
-      alert(`Gracias ${name}, recibimos tu mensaje:\n\n"${message}"\n\nTe responderemos a ${email}`);
+      alert(`Gracias ${name}, recibimos tu mensaje:\n\n"${message}"\n\nTe responderemos a ${email}.`);
       this.contact = { name: '', email: '', message: '' };
     } else {
-      alert('Por favor completa todos los campos');
+      alert('Por favor completa todos los campos.');
     }
   }
 
@@ -37,11 +44,11 @@ export class AppComponent {
     window.open(url, '_blank');
   }
 
-  selectPlan(plan: string) {
-    if (plan === 'Free') {
-      alert('Seleccionaste el Plan Gratis. Empieza a explorar.');
-    } else if (plan === 'Pro') {
-      alert('Seleccionaste el Plan Pro. ¡Disfruta todos los beneficios!');
+  selectPricingPlan(plan: string) {
+    if (plan === 'free') {
+      alert('Seleccionaste el plan Free. ¡Empieza ahora gratis!');
+    } else if (plan === 'pro') {
+      alert('Seleccionaste el plan Pro. Accede a todas las funciones avanzadas.');
     }
   }
 }

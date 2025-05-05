@@ -1,35 +1,157 @@
-<header class="hero-section">
-  <h1 class="hero-title">Capitalent</h1>
-  <p class="hero-subtitle">Impulsa tu talento con nuestra plataforma</p>
-  <button class="start-btn" (click)="onStartFree()">Start for free</button>
+<header>
+  <div class="logo">Capitalent</div>
+  <nav>
+    <ul>
+      <li><a (click)="scrollToSection('main')">Main</a></li>
+      <li><a (click)="scrollToSection('about')">About</a></li>
+      <li><a (click)="scrollToSection('how-it-works')">How it works?</a></li>
+      <li><a (click)="scrollToSection('pricing')">Pricing</a></li>
+      <li><a (click)="scrollToSection('contact')">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="whatsapp-icon" (click)="openWhatsApp()">
+    <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp"/>
+  </div>
 </header>
 
-<section class="pricing-section">
-  <h2>Planes</h2>
-  <div class="pricing-cards">
-    <div class="card free">
-      <h3>Free</h3>
-      <p>Acceso limitado pero ideal para comenzar.</p>
-      <button (click)="selectPlan('Free')">Empieza Gratis</button>
+<!-- Main Section -->
+<main id="main" class="hero">
+  <h1>INVEST SMART</h1>
+  <h2>Capitalent makes it simple</h2>
+  <p>
+    A financial intelligence platform that analyzes the markets in real time and gives you clear buy or sell signals.<br/>
+    No noise. No confusion.
+  </p>
+  <button (click)="onStartNow()">Start for free</button>
+
+  <div class="crypto-icons">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/us-dollar-circled.png" alt="USD"/>
+    <img src="https://img.icons8.com/color/48/ethereum.png" alt="ETH"/>
+    <img src="https://img.icons8.com/color/48/bitcoin--v1.png" alt="BTC"/>
+    <img src="https://img.icons8.com/color/48/tether--v2.png" alt="USDT"/>
+    <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png" alt="USDC"/>
+    <img src="https://s2.coinmarketcap.com/static/img/coins/64x64/5426.png" alt="SOL"/>
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/euro-pound-exchange.png" alt="EUR"/>
+  </div>
+</main>
+
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="about-content">
+    <div class="about-text">
+      <h2>Built for the modern investor</h2>
+      <p>We’re solving the biggest challenge in trading — too much data, too little clarity.</p>
+      <p>Capitalent cuts through the noise with smart signals, so you make confident decisions whether you're new or experienced.</p>
+      <div class="about-tags">
+        <span class="tag green">Market analysis in real time</span>
+        <span class="tag gray">Smart signal engine</span>
+        <span class="tag orange">Designed for simplicity</span>
+      </div>
     </div>
-    <div class="card pro">
-      <h3>Pro</h3>
-      <p>Acceso completo a todas las funcionalidades.</p>
-      <button (click)="selectPlan('Pro')">Subir a Pro</button>
+    <div class="about-image">
+      <img src="assets/images/trading-view.jpg" alt="Trading Dashboard"/>
     </div>
   </div>
 </section>
 
-<section class="contact-section">
-  <h2>Contáctanos</h2>
-  <form (ngSubmit)="onSubmitContact()" #contactForm="ngForm">
-    <input type="text" placeholder="Nombre" [(ngModel)]="contact.name" name="name" required>
-    <input type="email" placeholder="Email" [(ngModel)]="contact.email" name="email" required>
-    <textarea placeholder="Mensaje" [(ngModel)]="contact.message" name="message" required></textarea>
-    <button type="submit">Enviar mensaje</button>
-  </form>
+<!-- How it works Section -->
+<section id="how-it-works" class="how-it-works">
+  <h2>How Capitalent Works?</h2>
+  <div class="steps">
+    <div class="step">
+      <img src="assets/icons/wpf_statistics.png" alt="Track Icon" class="step-icon">
+      <div class="circle gray">Track</div>
+      <p>We continuously monitor price movements, volume, volatility and patterns across markets.</p>
+    </div>
+
+    <div class="arrow">
+      <img src="assets/icons/right-arrow.png" alt="Arrow Icon">
+    </div>
+
+    <div class="step">
+      <img src="assets/icons/ix_analyze.png" alt="Analyze Icon" class="step-icon">
+      <div class="circle orange">Analyze</div>
+      <p>Our algorithms process data with technical indicators and predictive models.</p>
+    </div>
+
+    <div class="arrow">
+      <img src="assets/icons/right-arrow.png" alt="Arrow Icon">
+    </div>
+
+    <div class="step">
+      <img src="assets/icons/target-icon.png" alt="Signal Icon" class="step-icon">
+      <div class="circle green">Signal</div>
+      <p>When there's a clear opportunity, you get a signal instantly.</p>
+    </div>
+  </div>
 </section>
 
-<div class="whatsapp-float" (click)="openWhatsApp()">
-  <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
-</div>
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+  <div class="pricing-header">
+    <h2>Simple Pricing for Smart Investors</h2>
+  </div>
+  <div class="pricing-cards">
+    <div class="pricing-card">
+      <div class="card-header">
+        <h3>Standard</h3>
+        <span class="plan-label">Free</span>
+      </div>
+      <div class="divider"></div>
+      <div class="price">
+        <span class="currency">$</span>
+        <span class="amount">0</span>
+      </div>
+      <ul class="features">
+        <li>✓ Real-time basic signals</li>
+        <li>✓ 1 asset category</li>
+        <li>✓ Email alerts</li>
+      </ul>
+      <button class="pricing-btn free-btn" (click)="selectPricingPlan('free')">Start Free</button>
+    </div>
+
+    <div class="pricing-card featured">
+      <div class="card-header">
+        <h3>Pro</h3>
+        <span class="plan-label">Advanced</span>
+      </div>
+      <div class="divider"></div>
+      <div class="price">
+        <span class="currency">$</span>
+        <span class="amount">10</span>
+      </div>
+      <ul class="features">
+        <li>✓ Real-time advanced signals</li>
+        <li>✓ All asset categories</li>
+        <li>✓ Priority alerts & insights</li>
+      </ul>
+      <button class="pricing-btn pro-btn" (click)="selectPricingPlan('pro')">Buy now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="contact-container">
+    <h2>Contact us</h2>
+    <form (ngSubmit)="onContactSubmit()" #contactForm="ngForm">
+      <div class="form-group">
+        <input type="text" placeholder="Name" [(ngModel)]="contact.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Email" [(ngModel)]="contact.email" name="email" required>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Message" [(ngModel)]="contact.message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <p>© 2025 Capitalent. All rights reserved</p>
+  </div>
+</footer>
