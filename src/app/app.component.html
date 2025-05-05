@@ -2,12 +2,14 @@
   <div class="logo">Capitalent</div>
   <nav>
     <ul>
-      <li><a (click)="scrollToSection('main')">Main</a></li>
-      <li><a (click)="scrollToSection('about')">About</a></li>
-      <li><a (click)="scrollToSection('how-it-works')">How it works?</a></li>
-      <li><a (click)="scrollToSection('pricing')">Pricing</a></li>
-      <li><a (click)="scrollToSection('contact')">Contact</a></li>
+      <li><a (click)="scrollToSection('main')">{{ 'NAV.MAIN' | translate }}</a></li>
+      <li><a (click)="scrollToSection('about')">{{ 'NAV.ABOUT' | translate }}</a></li>
+      <li><a (click)="scrollToSection('how-it-works')">{{ 'NAV.HOW_IT_WORKS' | translate }}</a></li>
+      <li><a (click)="scrollToSection('pricing')">{{ 'NAV.PRICING' | translate }}</a></li>
+      <li><a (click)="scrollToSection('contact')">{{ 'NAV.CONTACT' | translate }}</a></li>
     </ul>
+    <button (click)="changeLang('en')">EN</button>
+    <button (click)="changeLang('es')">ES</button>
   </nav>
   <div class="whatsapp-icon" (click)="openWhatsApp()">
     <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp"/>
@@ -16,13 +18,10 @@
 
 <!-- Main Section -->
 <main id="main" class="hero">
-  <h1>INVEST SMART</h1>
-  <h2>Capitalent makes it simple</h2>
-  <p>
-    A financial intelligence platform that analyzes the markets in real time and gives you clear buy or sell signals.<br/>
-    No noise. No confusion.
-  </p>
-  <button (click)="onStartNow()">Start for free</button>
+  <h1>{{ 'HERO.TITLE' | translate }}</h1>
+  <h2>{{ 'HERO.SUBTITLE' | translate }}</h2>
+  <p>{{ 'HERO.DESCRIPTION' | translate }}</p>
+  <button (click)="onStartNow()">{{ 'HERO.START_BUTTON' | translate }}</button>
 
   <div class="crypto-icons">
     <img src="https://img.icons8.com/ios-filled/50/ffffff/us-dollar-circled.png" alt="USD"/>
@@ -39,13 +38,13 @@
 <section id="about" class="about">
   <div class="about-content">
     <div class="about-text">
-      <h2>Built for the modern investor</h2>
-      <p>We’re solving the biggest challenge in trading — too much data, too little clarity.</p>
-      <p>Capitalent cuts through the noise with smart signals, so you make confident decisions whether you're new or experienced.</p>
+      <h2>{{ 'ABOUT.TITLE' | translate }}</h2>
+      <p>{{ 'ABOUT.P1' | translate }}</p>
+      <p>{{ 'ABOUT.P2' | translate }}</p>
       <div class="about-tags">
-        <span class="tag green">Market analysis in real time</span>
-        <span class="tag gray">Smart signal engine</span>
-        <span class="tag orange">Designed for simplicity</span>
+        <span class="tag green">{{ 'ABOUT.TAGS.REALTIME' | translate }}</span>
+        <span class="tag gray">{{ 'ABOUT.TAGS.SMART_ENGINE' | translate }}</span>
+        <span class="tag orange">{{ 'ABOUT.TAGS.SIMPLICITY' | translate }}</span>
       </div>
     </div>
     <div class="about-image">
@@ -56,12 +55,12 @@
 
 <!-- How it works Section -->
 <section id="how-it-works" class="how-it-works">
-  <h2>How Capitalent Works?</h2>
+  <h2>{{ 'HOW_WORKS.TITLE' | translate }}</h2>
   <div class="steps">
     <div class="step">
       <img src="assets/icons/wpf_statistics.png" alt="Track Icon" class="step-icon">
-      <div class="circle gray">Track</div>
-      <p>We continuously monitor price movements, volume, volatility and patterns across markets.</p>
+      <div class="circle gray">{{ 'HOW_WORKS.TRACK.TITLE' | translate }}</div>
+      <p>{{ 'HOW_WORKS.TRACK.DESCRIPTION' | translate }}</p>
     </div>
 
     <div class="arrow">
@@ -70,8 +69,8 @@
 
     <div class="step">
       <img src="assets/icons/ix_analyze.png" alt="Analyze Icon" class="step-icon">
-      <div class="circle orange">Analyze</div>
-      <p>Our algorithms process data with technical indicators and predictive models.</p>
+      <div class="circle orange">{{ 'HOW_WORKS.ANALYZE.TITLE' | translate }}</div>
+      <p>{{ 'HOW_WORKS.ANALYZE.DESCRIPTION' | translate }}</p>
     </div>
 
     <div class="arrow">
@@ -80,8 +79,8 @@
 
     <div class="step">
       <img src="assets/icons/target-icon.png" alt="Signal Icon" class="step-icon">
-      <div class="circle green">Signal</div>
-      <p>When there's a clear opportunity, you get a signal instantly.</p>
+      <div class="circle green">{{ 'HOW_WORKS.SIGNAL.TITLE' | translate }}</div>
+      <p>{{ 'HOW_WORKS.SIGNAL.DESCRIPTION' | translate }}</p>
     </div>
   </div>
 </section>
@@ -89,13 +88,13 @@
 <!-- Pricing Section -->
 <section id="pricing" class="pricing">
   <div class="pricing-header">
-    <h2>Simple Pricing for Smart Investors</h2>
+    <h2>{{ 'PRICING.TITLE' | translate }}</h2>
   </div>
   <div class="pricing-cards">
     <div class="pricing-card">
       <div class="card-header">
-        <h3>Standard</h3>
-        <span class="plan-label">Free</span>
+        <h3>{{ 'PRICING.STANDARD.TITLE' | translate }}</h3>
+        <span class="plan-label">{{ 'PRICING.STANDARD.LABEL' | translate }}</span>
       </div>
       <div class="divider"></div>
       <div class="price">
@@ -103,17 +102,17 @@
         <span class="amount">0</span>
       </div>
       <ul class="features">
-        <li>✓ Real-time basic signals</li>
-        <li>✓ 1 asset category</li>
-        <li>✓ Email alerts</li>
+        <li>✓ {{ 'PRICING.STANDARD.FEATURE1' | translate }}</li>
+        <li>✓ {{ 'PRICING.STANDARD.FEATURE2' | translate }}</li>
+        <li>✓ {{ 'PRICING.STANDARD.FEATURE3' | translate }}</li>
       </ul>
-      <button class="pricing-btn free-btn" (click)="selectPricingPlan('free')">Start Free</button>
+      <button class="pricing-btn free-btn" (click)="selectPricingPlan('free')">{{ 'PRICING.START_FREE' | translate }}</button>
     </div>
 
     <div class="pricing-card featured">
       <div class="card-header">
-        <h3>Pro</h3>
-        <span class="plan-label">Advanced</span>
+        <h3>{{ 'PRICING.PRO.TITLE' | translate }}</h3>
+        <span class="plan-label">{{ 'PRICING.PRO.LABEL' | translate }}</span>
       </div>
       <div class="divider"></div>
       <div class="price">
@@ -121,11 +120,11 @@
         <span class="amount">10</span>
       </div>
       <ul class="features">
-        <li>✓ Real-time advanced signals</li>
-        <li>✓ All asset categories</li>
-        <li>✓ Priority alerts & insights</li>
+        <li>✓ {{ 'PRICING.PRO.FEATURE1' | translate }}</li>
+        <li>✓ {{ 'PRICING.PRO.FEATURE2' | translate }}</li>
+        <li>✓ {{ 'PRICING.PRO.FEATURE3' | translate }}</li>
       </ul>
-      <button class="pricing-btn pro-btn" (click)="selectPricingPlan('pro')">Buy now</button>
+      <button class="pricing-btn pro-btn" (click)="selectPricingPlan('pro')">{{ 'PRICING.BUY_NOW' | translate }}</button>
     </div>
   </div>
 </section>
@@ -133,18 +132,18 @@
 <!-- Contact Section -->
 <section id="contact" class="contact">
   <div class="contact-container">
-    <h2>Contact us</h2>
+    <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
     <form (ngSubmit)="onContactSubmit()" #contactForm="ngForm">
       <div class="form-group">
-        <input type="text" placeholder="Name" [(ngModel)]="contact.name" name="name" required>
+        <input type="text" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" [(ngModel)]="contact.name" name="name" required>
       </div>
       <div class="form-group">
-        <input type="email" placeholder="Email" [(ngModel)]="contact.email" name="email" required>
+        <input type="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" [(ngModel)]="contact.email" name="email" required>
       </div>
       <div class="form-group">
-        <textarea placeholder="Message" [(ngModel)]="contact.message" name="message" rows="4" required></textarea>
+        <textarea [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate" [(ngModel)]="contact.message" name="message" rows="4" required></textarea>
       </div>
-      <button type="submit" class="submit-btn">Send</button>
+      <button type="submit" class="submit-btn">{{ 'CONTACT.SEND' | translate }}</button>
     </form>
   </div>
 </section>
@@ -152,6 +151,6 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-container">
-    <p>© 2025 Capitalent. All rights reserved</p>
+    <p>© 2025 Capitalent. {{ 'FOOTER.RIGHTS' | translate }}</p>
   </div>
 </footer>

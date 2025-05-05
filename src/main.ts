@@ -1,5 +1,11 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { AppComponent } from './app/app.component';
+import { provideHttpClient, withInterceptors } from '@angular/common/http';
+import { provideTranslations } from './app/translation.provider';
 
-bootstrapApplication(AppComponent)
-  .catch(err => console.error(err));
+bootstrapApplication(AppComponent, {
+  providers: [
+    provideHttpClient(),
+    provideTranslations()  // 👈 añadimos nuestro provider de traducción
+  ]
+});

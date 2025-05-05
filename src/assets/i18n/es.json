@@ -1,0 +1,76 @@
+{
+  "NAV": {
+    "MAIN": "Inicio",
+    "ABOUT": "Nosotros",
+    "HOW_IT_WORKS": "Cómo funciona",
+    "PRICING": "Precios",
+    "CONTACT": "Contacto"
+  },
+  "HERO": {
+    "TITLE": "Invierte inteligentemente, crece más rápido",
+    "SUBTITLE": "Plataforma todo-en-uno para señales cripto",
+    "DESCRIPTION": "Únete a miles de inversores optimizando su estrategia cripto",
+    "START_BUTTON": "Comienza ahora"
+  },
+  "ABOUT": {
+    "TITLE": "Sobre Capitalent",
+    "P1": "Capitalent ofrece insights cripto de vanguardia.",
+    "P2": "Te ayudamos a tomar decisiones de trading informadas con facilidad.",
+    "TAGS": {
+      "REALTIME": "Alertas en tiempo real",
+      "SMART_ENGINE": "Motor inteligente",
+      "SIMPLICITY": "Simplicidad"
+    }
+  },
+  "HOW_WORKS": {
+    "TITLE": "Cómo funciona",
+    "TRACK": {
+      "TITLE": "Rastrea",
+      "DESCRIPTION": "Monitorea las tendencias del mercado fácilmente"
+    },
+    "ANALYZE": {
+      "TITLE": "Analiza",
+      "DESCRIPTION": "Usa nuestras herramientas inteligentes para analizar datos"
+    },
+    "SIGNAL": {
+      "TITLE": "Señal",
+      "DESCRIPTION": "Recibe señales de compra/venta al instante"
+    }
+  },
+  "PRICING": {
+    "TITLE": "Nuestros precios",
+    "STANDARD": {
+      "TITLE": "Plan Estándar",
+      "LABEL": "Gratis",
+      "FEATURE1": "Alertas en tiempo real",
+      "FEATURE2": "Analíticas básicas",
+      "FEATURE3": "Acceso a la comunidad"
+    },
+    "PRO": {
+      "TITLE": "Plan Pro",
+      "LABEL": "Recomendado",
+      "FEATURE1": "Señales avanzadas",
+      "FEATURE2": "Soporte prioritario",
+      "FEATURE3": "Insights exclusivos"
+    },
+    "START_FREE": "Comenzar Gratis",
+    "BUY_NOW": "Comprar Ahora"
+  },
+  "CONTACT": {
+    "TITLE": "Contáctanos",
+    "NAME_PLACEHOLDER": "Tu nombre",
+    "EMAIL_PLACEHOLDER": "Tu correo",
+    "MESSAGE_PLACEHOLDER": "Tu mensaje",
+    "SEND": "Enviar"
+  },
+  "FOOTER": {
+    "RIGHTS": "Todos los derechos reservados."
+  },
+  "ALERTS": {
+    "START_NOW": "¡Empecemos!",
+    "CONTACT_SUCCESS": "Gracias {{name}}. Hemos recibido tu mensaje: {{message}}. Te contactaremos a {{email}} pronto.",
+    "FILL_ALL_FIELDS": "Por favor completa todos los campos.",
+    "PLAN_FREE": "¡Has seleccionado el plan Gratis!",
+    "PLAN_PRO": "¡Has seleccionado el plan Pro!"
+  }
+}
