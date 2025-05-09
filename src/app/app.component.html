@@ -8,13 +8,16 @@
       <li><a (click)="scrollToSection('pricing')">{{ 'NAV.PRICING' | translate }}</a></li>
       <li><a (click)="scrollToSection('contact')">{{ 'NAV.CONTACT' | translate }}</a></li>
     </ul>
+  </nav>
+  <div class="lang-switcher">
     <button (click)="changeLang('en')">EN</button>
     <button (click)="changeLang('es')">ES</button>
-  </nav>
+  </div>
   <div class="whatsapp-icon" (click)="openWhatsApp()">
     <img src="https://img.icons8.com/ios-filled/24/ffffff/whatsapp.png" alt="WhatsApp"/>
   </div>
 </header>
+
 
 <!-- Main Section -->
 <main id="main" class="hero">
@@ -129,25 +132,15 @@
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="contact">
-  <div class="contact-container">
-    <h2>{{ 'CONTACT.TITLE' | translate }}</h2>
-    <form (ngSubmit)="onContactSubmit()" #contactForm="ngForm">
-      <div class="form-group">
-        <input type="text" [placeholder]="'CONTACT.NAME_PLACEHOLDER' | translate" [(ngModel)]="contact.name" name="name" required>
-      </div>
-      <div class="form-group">
-        <input type="email" [placeholder]="'CONTACT.EMAIL_PLACEHOLDER' | translate" [(ngModel)]="contact.email" name="email" required>
-      </div>
-      <div class="form-group">
-        <textarea [placeholder]="'CONTACT.MESSAGE_PLACEHOLDER' | translate" [(ngModel)]="contact.message" name="message" rows="4" required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">{{ 'CONTACT.SEND' | translate }}</button>
-    </form>
-  </div>
+<section id="contact">
+  <h2>¡Contáctanos!</h2>
+  <form>
+    <input type="text" placeholder="Tu Nombre" />
+    <input type="email" placeholder="Tu Email" />
+    <input type="text" placeholder="Mensaje"/>
+    <button type="submit">Enviar</button>
+  </form>
 </section>
-
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-container">

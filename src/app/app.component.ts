@@ -16,36 +16,36 @@ export class AppComponent {
     email: '',
     message: ''
   };
-  
+
   constructor(private translate: TranslateService) {
     // Configure supported languages
     translate.addLangs(['en', 'es']);
-    
+
     // Set default language
     translate.setDefaultLang('en');
-    
+
     // Detect browser language (optional)
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
   }
-  
+
   changeLang(lang: string): void {
     this.translate.use(lang);
   }
-  
+
   onStartNow() {
     this.translate.get('ALERTS.START_NOW').subscribe(message => {
       alert(message);
     });
   }
-  
+
   scrollToSection(sectionId: string) {
     const el = document.getElementById(sectionId);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
     }
   }
-  
+
   onContactSubmit() {
     const { name, email, message } = this.contact;
     if (name && email && message) {
@@ -59,14 +59,14 @@ export class AppComponent {
       });
     }
   }
-  
+
   openWhatsApp() {
     const phoneNumber = '51999999999'; // Change to your real number
     const message = encodeURIComponent('¡Hola! Quiero más información sobre Capitalent.');
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, '_blank');
   }
-  
+
   selectPricingPlan(plan: string) {
     const translationKey = plan === 'free' ? 'ALERTS.PLAN_FREE' : 'ALERTS.PLAN_PRO';
     this.translate.get(translationKey).subscribe(message => {
