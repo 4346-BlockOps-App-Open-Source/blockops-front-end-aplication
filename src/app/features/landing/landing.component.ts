@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing',
   standalone: true,
-  imports: [CommonModule, FormsModule, TranslateModule],
+  imports: [CommonModule, FormsModule, TranslateModule, RouterModule],
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.css']
 })
@@ -17,14 +18,10 @@ export class LandingComponent {
     message: ''
   };
 
-  constructor(private translate: TranslateService) {
-    // Configure supported languages
+  constructor(private translate: TranslateService, private router: Router) {
+    // Configurar los idiomas soportados
     translate.addLangs(['en', 'es']);
-
-    // Set default language
     translate.setDefaultLang('en');
-
-    // Detect browser language (optional)
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
   }
@@ -61,16 +58,26 @@ export class LandingComponent {
   }
 
   openWhatsApp() {
-    const phoneNumber = '51999999999'; // Change to your real number
+    const phoneNumber = '51999999999'; // Cambiar por tu número real
     const message = encodeURIComponent('¡Hola! Quiero más información sobre Capitalent.');
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, '_blank');
   }
 
   selectPricingPlan(plan: string) {
-    const translationKey = plan === 'free' ? 'ALERTS.PLAN_FREE' : 'ALERTS.PLAN_PRO';
-    this.translate.get(translationKey).subscribe(message => {
-      alert(message);
+    const planName = plan === 'free' ? 'Standard' : 'Pro';
+    this.translate.get('ALERTS.PRICING_SELECTED', { plan: planName }).subscribe(alertMessage => {
+      alert(alertMessage);
     });
+  }
+
+  // Función para navegar a la página de registro
+  navigateToRegister() {
+    this.router.navigate(['/register']);
+  }
+
+  // Función para navegar a la página de inicio de sesión
+  navigateToLogin() {
+    this.router.navigate(['/login']);
   }
 }
