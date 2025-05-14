@@ -7,9 +7,12 @@
     "types": []
   },
   "files": [
-    "src/main.ts"
+    "src/main.ts",
+    "src/polyfills.ts"
   ],
   "include": [
+    "src/main.ts",
+    "src/polyfills.ts",
     "src/**/*.d.ts"
   ]
 }

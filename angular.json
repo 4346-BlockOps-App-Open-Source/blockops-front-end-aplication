@@ -1,7 +1,8 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "./node_modules/@angular/cli/lib/config/workspace-schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "defaultProject": "frontendCapitalent",
   "projects": {
     "frontendCapitalent": {
       "projectType": "application",
@@ -11,14 +12,12 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:application",
+          "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/frontend-capitalent",
             "index": "src/index.html",
-            "browser": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "main": "src/main.ts",
+            "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
@@ -65,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "frontendCapitalent:build:production"
+              "browserTarget": "frontendCapitalent:build:production"
             },
             "development": {
-              "buildTarget": "frontendCapitalent:build:development"
+              "browserTarget": "frontendCapitalent:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,6 +78,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
+            // En testing Angular espera un array aquí:
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -99,5 +99,7 @@
       }
     }
   },
-  "defaultProject": "frontendCapitalent"
+  "cli": {
+    "analytics": false
+  }
 }

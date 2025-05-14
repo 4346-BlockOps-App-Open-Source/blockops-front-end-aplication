@@ -1,0 +1,453 @@
+/* Importar una tipografía llamativa */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.landing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px 30px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Header and Navigation */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: linear-gradient(45deg, #1e3c72, #2a5298); /* Fondo azul */
+  border-bottom: 1px solid #1f2f4a;
+  position: static;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.logo {
+  font-weight: 800;
+  font-size: 45px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+.lang-switcher button {
+  padding: 8px 15px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #2c3e50;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.whatsapp-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Hero section */
+.hero-section {
+  text-align: center;
+  padding: 80px 0;
+  background: linear-gradient(135deg, #4285f4, #34a853);
+  color: white;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.hero h2 {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+}
+
+.hero button {
+  background-color: #ea4335;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+}
+
+.crypto-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Features section */
+.features-section {
+  margin-top: 40px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+/* About section */
+.about {
+  background-color: #0B1B34;
+  padding: 80px 0;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.tag {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.tag.green {
+  background-color: #34a853;
+  color: white;
+}
+
+.tag.orange {
+  background-color: #ea4335;
+  color: white;
+}
+
+.tag.gray {
+  background-color: #757575;
+  color: white;
+}
+
+/* How it works section */
+.how-it-works {
+  text-align: center;
+  padding: 80px 0;
+}
+
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.step {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+  padding: 30px;
+}
+
+.step-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.circle {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  line-height: 120px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+}
+
+.arrow img {
+  width: 40px;
+  height: auto;
+}
+
+/* Pricing section */
+.pricing {
+  background-color: #0B1B34;
+  padding: 80px 0;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card.featured {
+  border: 2px solid #4285f4;
+  position: relative;
+  transform: scale(1.05);
+}
+
+.card-header {
+  margin-bottom: 30px;
+}
+
+.plan-label {
+  display: inline-block;
+  background-color: #4285f4;
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  margin-top: 10px;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 30px 0;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4285f4;
+  margin-bottom: 30px;
+}
+
+.currency {
+  font-size: 1.2rem;
+  vertical-align: super;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.pricing-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #ea4335;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.pricing-btn:hover {
+  background-color: #4285f4;
+}
+
+/* Contact form */
+.contact-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+#contact {
+  background: #0B1B34;/*cambiar de color*/
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+form button {
+  padding: 12px 20px;
+  font-size: 18px;
+  background-color: #1e3c72; /* Azul */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2a5298; /* Azul más claro */
+}
+
+/* Estilos para hacer las secciones más llamativas */
+nav a,
+#contact h2 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animaciones para mejorar la interactividad */
+nav a:hover {
+  animation: bounce 0.3s ease;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
