@@ -3,7 +3,7 @@ import { LandingComponent } from './features/landing/landing.component';
 import { RegisterComponent } from './features/register/register.component';
 import { RiskProfileComponent } from './features/risk-profile/risk-profile.component';
 import { PreferencesComponent } from './features/preferences/preferences.component';
-import { EducacionfComponent } from './features/educacionf/educacionf.component';
+
 export const routes: Routes = [
   {
     path: '',
@@ -24,7 +24,5 @@ export const routes: Routes = [
     path: 'preferences',
     component: PreferencesComponent,
     title: 'Personalización de Señales'
-  },
-  { path: '', component: LandingComponent },
-  { path: 'educacion-financiera', component: EducacionfComponent }
+
 ];
