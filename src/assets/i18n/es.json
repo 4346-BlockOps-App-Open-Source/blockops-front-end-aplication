@@ -72,5 +72,11 @@
     "FILL_ALL_FIELDS": "Por favor completa todos los campos.",
     "PLAN_FREE": "¡Has seleccionado el plan Gratis!",
     "PLAN_PRO": "¡Has seleccionado el plan Pro!"
+  }, 
+   "SIGNALS": {
+    "TITLE": "Señales en Vivo",
+    "SAMPLE_TITLE": "Señal de Compra de Bitcoin",
+    "SAMPLE_DESC": "Compra BTC ahora por ruptura de resistencia.",
+    "DETAILS_TITLE": "Detalles de la Señal"
   }
 }
