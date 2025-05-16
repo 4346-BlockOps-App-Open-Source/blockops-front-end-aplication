@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notificaciones con filtro y categorías</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container" role="main">
+  <h1>Notificaciones</h1>
+  <div class="filters" role="group" aria-label="Filtro de Estado">
+    <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true">Todas</button>
+    <button class="filter-btn" data-filter="no-leidas" type="button" aria-pressed="false">No leídas</button>
+    <button class="filter-btn" data-filter="leidas" type="button" aria-pressed="false">Leídas</button>
+  </div>
+  <div class="filters" role="group" aria-label="Filtro de Categoría">
+    <button class="filter-btn category" data-filter="Cripto" type="button" aria-pressed="false">Cripto</button>
+    <button class="filter-btn category" data-filter="Acciones" type="button" aria-pressed="false">Acciones</button>
+    <button class="filter-btn category" data-filter="Bonos" type="button" aria-pressed="false">Bonos</button>
+    <button class="filter-btn category" data-filter="Forex" type="button" aria-pressed="false">Forex</button>
+  </div>
+
+  <ul class="notifications" id="notificationsList" tabindex="0" aria-live="polite" aria-relevant="additions removals">
+    <!-- Notificaciones se mostrarán aquí -->
+  </ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/4.9.4/typescript.min.js"></script>
+<script src="app.ts" type="module"></script>
+</body>
+</html>
+
