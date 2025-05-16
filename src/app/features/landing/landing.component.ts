@@ -98,4 +98,7 @@ export class LandingComponent implements OnInit {
   navigateToLogin(): void {
     this.router.navigate(['/login']);
   }
+  navigateToEducacionFinanciera() {
+    this.router.navigate(['/educacionf']);
+  }
 }
