@@ -1,0 +1,23 @@
+<h2>Resumen Diario de Movimientos Clave</h2>
+<ul>
+  <li *ngFor="let signal of dailySummary">
+    {{ signal.date | date:'shortTime' }} - {{ signal.type | uppercase }} {{ signal.symbol }} a ${{ signal.price }}
+  </li>
+</ul>
+
+<h2>Señales Recibidas</h2>
+<ul>
+  <li *ngFor="let signal of signals" (click)="selectSignal(signal)" [class.buy]="signal.type==='buy'" [class.sell]="signal.type==='sell'">
+    <strong>{{ signal.type === 'buy' ? 'Comprar' : 'Vender' }}</strong> {{ signal.symbol }} - ${{ signal.price }}
+  </li>
+</ul>
+
+<div *ngIf="selectedSignal" class="explanation">
+  <h3>Explicación de la señal</h3>
+  <p><strong>Tipo:</strong> {{ selectedSignal.type }}</p>
+  <p><strong>Activo:</strong> {{ selectedSignal.symbol }}</p>
+  <p><strong>Precio:</strong> ${{ selectedSignal.price }}</p>
+  <p><strong>Motivo:</strong> {{ selectedSignal.reason }}</p>
+  <p><strong>Fecha:</strong> {{ selectedSignal.date | date:'medium' }}</p>
+  <button (click)="closeExplanation()">Cerrar</button>
+</div>

@@ -37,6 +37,16 @@
     <img src="https://img.icons8.com/ios-filled/50/ffffff/euro-pound-exchange.png" alt="EUR"/>
   </div>
 </main>
+<div class="signal-container" *ngIf="signals.length > 0">
+  <h3>{{ 'SIGNALS.TITLE' | translate }}</h3>
+
+  <div *ngFor="let signal of signals" class="signal-card" [ngClass]="signal.type">
+    <h3>{{ signal.title | translate }}</h3>
+    <p class="symbol">{{ signal.symbol }} - ${{ signal.price }}</p>
+    <p class="description">{{ signal.description | translate }}</p>
+    <small>{{ signal.date | date:'short' }}</small>
+  </div>
+</div>
 
 <!-- About Section -->
 <section id="about" class="about">

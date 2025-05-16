@@ -72,5 +72,13 @@
     "FILL_ALL_FIELDS": "Please fill all fields.",
     "PLAN_FREE": "You selected the Free plan!",
     "PLAN_PRO": "You selected the Pro plan!"
+  }, 
+   "SIGNALS": {
+    "TITLE": "Live Signals",
+    "SAMPLE_TITLE": "Bitcoin Buy Signal",
+    "SAMPLE_DESC": "Buy BTC now due to breakout.",
+    "DETAILS_TITLE": "Signal Details"
   }
+
+
 }
