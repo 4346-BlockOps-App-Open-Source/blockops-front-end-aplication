@@ -24,5 +24,5 @@ export const routes: Routes = [
     path: 'preferences',
     component: PreferencesComponent,
     title: 'Personalización de Señales'
-  }
+
 ];
