@@ -1,3 +1,8 @@
+<!-- landing.component.html -->
+<div class="landing-buttons">
+  <button class="landing-btn register" (click)="navigateToRegister()">Registrar</button>
+  <button class="landing-btn login" (click)="navigateToLogin()">Iniciar sesión</button>
+</div>
 
 <header>
   <div class="logo">Capitalent</div>
@@ -19,7 +24,6 @@
   </div>
 </header>
 
-
 <!-- Main Section -->
 <main id="main" class="hero">
   <h1>{{ 'HERO.TITLE' | translate }}</h1>
@@ -37,16 +41,6 @@
     <img src="https://img.icons8.com/ios-filled/50/ffffff/euro-pound-exchange.png" alt="EUR"/>
   </div>
 </main>
-<div class="signal-container" *ngIf="signals.length > 0">
-  <h3>{{ 'SIGNALS.TITLE' | translate }}</h3>
-
-  <div *ngFor="let signal of signals" class="signal-card" [ngClass]="signal.type">
-    <h3>{{ signal.title | translate }}</h3>
-    <p class="symbol">{{ signal.symbol }} - ${{ signal.price }}</p>
-    <p class="description">{{ signal.description | translate }}</p>
-    <small>{{ signal.date | date:'short' }}</small>
-  </div>
-</div>
 
 <!-- About Section -->
 <section id="about" class="about">
@@ -143,6 +137,7 @@
   </div>
 </section>
 
+<!-- Contact Section -->
 <section id="contact">
   <h2>¡Contáctanos!</h2>
   <form>
@@ -152,6 +147,7 @@
     <button type="submit">Enviar</button>
   </form>
 </section>
+
 <!-- Footer -->
 <footer class="footer">
   <div class="footer-container">

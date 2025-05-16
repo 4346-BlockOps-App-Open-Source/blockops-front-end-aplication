@@ -1,12 +1,13 @@
 /* Importar una tipografía llamativa */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 /* Global styles */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.6;
 }
 
@@ -52,14 +53,13 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  background: linear-gradient(45deg, #1e3c72, #2a5298); /* Fondo azul */
+  background: linear-gradient(45deg, #1e3c72, #2a5298);
   border-bottom: 1px solid #1f2f4a;
   position: static;
   top: 0;
   z-index: 1000;
   font-family: 'Poppins', sans-serif;
 }
-
 
 .logo {
   font-weight: 800;
@@ -68,6 +68,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
 }
+
 nav ul {
   display: flex;
   list-style: none;
@@ -383,7 +384,7 @@ nav ul li a:hover {
 }
 
 #contact {
-  background: #0B1B34;/*cambiar de color*/
+  background: #0B1B34;
   padding: 50px 20px;
   text-align: center;
 }
@@ -416,7 +417,7 @@ form textarea {
 form button {
   padding: 12px 20px;
   font-size: 18px;
-  background-color: #1e3c72; /* Azul */
+  background-color: #1e3c72;
   color: white;
   border: none;
   border-radius: 5px;
@@ -425,21 +426,19 @@ form button {
 }
 
 form button:hover {
-  background-color: #2a5298; /* Azul más claro */
+  background-color: #2a5298;
 }
 
-/* Estilos para hacer las secciones más llamativas */
+/* Estilos visuales y animaciones */
 nav a,
 #contact h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Animaciones para mejorar la interactividad */
 nav a:hover {
   animation: bounce 0.3s ease;
 }
 
-/* Animación de rebote */
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -451,6 +450,45 @@ nav a:hover {
     transform: translateY(-5px);
   }
 }
+
+/* Botones de login y registro */
+.login-button-container {
+  text-align: right;
+  margin: 1rem;
+}
+
+.landing-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.landing-btn {
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.landing-btn.register,
+.landing-btn.login {
+  background-color: #1e3a8a;
+  color: #ffffff;
+}
+
+.landing-btn.register:hover,
+.landing-btn.login:hover {
+  background-color: #2c5282;
+  transform: translateY(-2px);
+}
+
+/* Sección de señales */
 .signal-container {
   text-align: center;
   margin-top: 50px;
@@ -477,11 +515,11 @@ nav a:hover {
 }
 
 .signal-card.buy {
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)); /* verde */
+  background: linear-gradient(135deg, #34a853, #2e7d32);
 }
 
 .signal-card.sell {
-  background: linear-gradient(135deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)); /* rojo */
+  background: linear-gradient(135deg, #ea4335, #c62828);
 }
 
 .signal-card h3 {
