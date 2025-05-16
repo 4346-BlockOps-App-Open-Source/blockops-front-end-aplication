@@ -1,0 +1,215 @@
+.educacion-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  color: #222;
+}
+
+/* Títulos principales */
+.educacion-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.educacion-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 2rem;
+}
+
+/* Botón de regreso */
+.back-btn {
+  display: inline-block;
+  margin-bottom: 2rem;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #1c5980;
+}
+
+/* Secciones internas */
+.educacion-container section {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Estilos generales para subtítulos */
+h2 {
+  color: #2980b9;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #2980b9;
+  padding-bottom: 0.4rem;
+  font-size: 1.5rem;
+}
+
+/* Consejos rápidos */
+.tips-section ul {
+  list-style: inside disc;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Biblioteca de Recursos */
+.biblioteca-section .filters {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.biblioteca-section label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #34495e;
+}
+
+.biblioteca-section select {
+  margin-left: 0.5rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  border: 1.5px solid #2980b9;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.biblioteca-section select:hover {
+  border-color: #1c5980;
+}
+
+.biblioteca-section .recursos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.biblioteca-section .recurso {
+  background-color: #d6e9ff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.25s ease;
+  user-select: none;
+  box-shadow: 0 2px 6px rgba(41, 128, 185, 0.3);
+}
+
+.biblioteca-section .recurso:hover {
+  background-color: #a9c8ff;
+}
+
+/* Microlecciones */
+.microlecciones-section select {
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  border: 1.5px solid #2980b9;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.microlecciones-section ol {
+  list-style: decimal inside;
+  font-size: 1.1rem;
+  color: #333;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.microlecciones-section li {
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.microlecciones-section li:hover {
+  background-color: #e8f4ff;
+}
+
+.microlecciones-section li.selected {
+  background-color: #2980b9;
+  color: white;
+  font-weight: 700;
+}
+
+/* Quiz */
+.quiz-section button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(41, 128, 185, 0.5);
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  user-select: none;
+}
+
+.quiz-section button:hover:not(:disabled) {
+  background-color: #1c5980;
+  transform: scale(1.03);
+}
+
+.quiz-section button:disabled {
+  cursor: default;
+  opacity: 0.75;
+}
+
+.quiz-section .feedback {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-top: 0.8rem;
+  user-select: none;
+}
+
+/* Scroll para secciones con overflow */
+.recursos::-webkit-scrollbar,
+.microlecciones-section ol::-webkit-scrollbar {
+  width: 8px;
+}
+
+.recursos::-webkit-scrollbar-thumb,
+.microlecciones-section ol::-webkit-scrollbar-thumb {
+  background-color: #2980b9;
+  border-radius: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+  .educacion-container {
+    padding: 1rem 1.2rem;
+  }
+
+  .biblioteca-section .filters {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
