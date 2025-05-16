@@ -39,7 +39,7 @@ function renderNotifications() {
 
   list.innerHTML = '';
 
-  // Filtrado según filtro actual
+  // Filtrado según el filtro actual
   let filtered = notifications;
   if (currentFilter === 'leidas') {
     filtered = notifications.filter(n => n.leido);

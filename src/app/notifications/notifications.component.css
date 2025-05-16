@@ -86,7 +86,7 @@ button.filter-btn.active {
 button.filter-btn:hover:not(.active) {
   background-color: #2ea043;
 }
-/* Botones de categoría naranja apagado */
+/* Botones de categoría naranja oscuro */
 button.filter-btn.category {
   background-color: #b5732f;
 }
