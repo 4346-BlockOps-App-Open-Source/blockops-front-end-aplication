@@ -1,0 +1,25 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  cursor: pointer;
+  padding: 5px;
+  margin: 3px 0;
+  border-radius: 4px;
+}
+li.buy {
+  background-color: #00791c;
+  color: #155724;
+}
+li.sell {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.explanation {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f4f4f4;
+  border-radius: 6px;
+}
