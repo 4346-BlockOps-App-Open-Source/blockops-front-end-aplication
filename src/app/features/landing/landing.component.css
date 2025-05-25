@@ -451,3 +451,56 @@ nav a:hover {
     transform: translateY(-5px);
   }
 }
+.signal-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.signal-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.signal-card {
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.signal-card:hover {
+  transform: translateY(-5px);
+}
+
+.signal-card.buy {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)); /* verde */
+}
+
+.signal-card.sell {
+  background: linear-gradient(135deg,rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)); /* rojo */
+}
+
+.signal-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.signal-card .symbol {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.signal-card .description {
+  font-size: 0.95rem;
+  margin: 10px 0;
+}
+
+.signal-card small {
+  display: block;
+  margin-top: 10px;
+  opacity: 0.85;
+}

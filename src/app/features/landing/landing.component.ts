@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Signal } from '../../dashboard/models/signal.model'; // o donde tengas el modelo
+import { SignalsService } from '../../dashboard/services/signals.service'; // o donde esté el servicio
+
+
 
 @Component({
   selector: 'app-landing',
@@ -16,8 +20,10 @@ export class LandingComponent {
     email: '',
     message: ''
   };
-
-  constructor(private translate: TranslateService) {
+  signals: Signal[] = [];
+  selectedSignal?: Signal;
+  
+  constructor(private translate: TranslateService, private signalsService: SignalsService) {
     // Configure supported languages
     translate.addLangs(['en', 'es']);
 
@@ -28,6 +34,15 @@ export class LandingComponent {
     const browserLang = translate.getBrowserLang();
     translate.use(browserLang?.match(/en|es/) ? browserLang : 'en');
   }
+ngOnInit(): void {
+  this.signalsService.signals$.subscribe((data: Signal[]) => {
+    this.signals = data;
+    if (this.signals.length > 0) {
+      this.translate.get('ALERTS.NEW_SIGNALS').subscribe(msg => alert(msg));
+    }
+  });
+}
+
 
   changeLang(lang: string): void {
     this.translate.use(lang);
