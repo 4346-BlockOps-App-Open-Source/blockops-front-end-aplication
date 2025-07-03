@@ -1,0 +1,371 @@
+{
+  "NAV": {
+    "MAIN": "Inicio",
+    "ABOUT": "Nosotros",
+    "HOW_IT_WORKS": "Cómo funciona",
+    "PRICING": "Precios",
+    "CONTACT": "Contacto"
+  },
+  "HERO": {
+    "TITLE": "Invierte inteligentemente, crece más rápido",
+    "SUBTITLE": "Plataforma todo-en-uno para señales cripto",
+    "DESCRIPTION": "Únete a miles de inversores optimizando su estrategia cripto",
+    "START_BUTTON": "Comienza ahora"
+  },
+  "ABOUT": {
+    "TITLE": "Sobre Capitalent",
+    "P1": "Capitalent ofrece insights cripto de vanguardia.",
+    "P2": "Te ayudamos a tomar decisiones de trading informadas con facilidad.",
+    "TAGS": {
+      "REALTIME": "Alertas en tiempo real",
+      "SMART_ENGINE": "Motor inteligente",
+      "SIMPLICITY": "Simplicidad"
+    }
+  },
+  "HOW_WORKS": {
+    "TITLE": "Cómo funciona",
+    "TRACK": {
+      "TITLE": "Rastrea",
+      "DESCRIPTION": "Monitorea las tendencias del mercado fácilmente"
+    },
+    "ANALYZE": {
+      "TITLE": "Analiza",
+      "DESCRIPTION": "Usa nuestras herramientas inteligentes para analizar datos"
+    },
+    "SIGNAL": {
+      "TITLE": "Señal",
+      "DESCRIPTION": "Recibe señales de compra/venta al instante"
+    }
+  },
+  "PRICING": {
+    "TITLE": "Nuestros precios",
+    "STANDARD": {
+      "TITLE": "Plan Estándar",
+      "LABEL": "Gratis",
+      "FEATURE1": "Alertas en tiempo real",
+      "FEATURE2": "Analíticas básicas",
+      "FEATURE3": "Acceso a la comunidad"
+    },
+    "PRO": {
+      "TITLE": "Plan Pro",
+      "LABEL": "Recomendado",
+      "FEATURE1": "Señales avanzadas",
+      "FEATURE2": "Soporte prioritario",
+      "FEATURE3": "Insights exclusivos"
+    },
+    "START_FREE": "Comenzar Gratis",
+    "BUY_NOW": "Comprar Ahora"
+  },
+  "CONTACT": {
+    "TITLE": "Contáctanos",
+    "NAME_PLACEHOLDER": "Tu nombre",
+    "EMAIL_PLACEHOLDER": "Tu correo",
+    "MESSAGE_PLACEHOLDER": "Tu mensaje",
+    "SEND": "Enviar"
+  },
+  "FOOTER": {
+    "RIGHTS": "Todos los derechos reservados."
+  },
+  "ALERTS": {
+    "START_NOW": "¡Empecemos!",
+    "CONTACT_SUCCESS": "Gracias {{name}}. Hemos recibido tu mensaje: {{message}}. Te contactaremos a {{email}} pronto.",
+    "FILL_ALL_FIELDS": "Por favor completa todos los campos.",
+    "PLAN_FREE": "¡Has seleccionado el plan Gratis!",
+    "PLAN_PRO": "¡Has seleccionado el plan Pro!"
+  },
+  "SIGNALS": {
+    "TITLE": "Señales en Vivo",
+    "SAMPLE_TITLE": "Señal de Compra de Bitcoin",
+    "SAMPLE_DESC": "Compra BTC ahora por ruptura de resistencia.",
+    "DETAILS_TITLE": "Detalles de la Señal"
+  },
+
+  "IDIOMA": "Cambiar idioma",
+  "EDUCACION_FINANCIERA": {
+    "TITULO": "Educación Financiera",
+    "DESCRIPCION": "Explora consejos, recursos y aprende jugando para mejorar tu salud financiera.",
+    "CONSEJOS": "Consejos Rápidos",
+    "BIBLIOTECA": "Biblioteca de Recursos",
+    "MICROLECCIONES": "Microlecciones Técnicas",
+    "QUIZ": "Quiz Interactivo",
+    "VOLVER": "Volver al Inicio"
+  },
+
+  "es": {
+    "biblioteca": [
+      {
+        "id": 1,
+        "titulo": "Presupuesto personal",
+        "descripcion": "Aprende a crear y mantener un presupuesto efectivo.",
+        "url": "https://bettermoneyhabits.bankofamerica.com/es/saving-budgeting/creating-a-budget"
+      },
+      {
+        "id": 2,
+        "titulo": "Ahorro inteligente",
+        "descripcion": "Estrategias para ahorrar y alcanzar tus metas financieras.",
+        "url": "https://www.viabcp.com/blog-bcp/ahorro-automatico-estrategias-para-ahorrar"
+      },
+      {
+        "id": 3,
+        "titulo": "Inversiones básicas",
+        "descripcion": "Guía introductoria al mundo de las inversiones.",
+        "url": "https://www.bbva.com/es/salud-financiera/que-son-las-inversiones-financieras-y-que-tipos-existen/"
+      },
+      {
+        "id": 4,
+        "titulo": "Crédito y deuda",
+        "descripcion": "Cómo usar el crédito de manera responsable.",
+        "url": "https://www.bbva.com/es/salud-financiera/que-es-la-deuda-para-que-sirve-y-como-se-mide-el-endeudamiento-financiero/"
+      },
+      {
+        "id": 5,
+        "titulo": "Fondo de emergencia",
+        "descripcion": "Cómo y por qué construir un fondo para imprevistos.",
+        "url": "https://www.bbva.com/es/salud-financiera/como-hacer-un-fondo-de-emergencia-y-donde-guardarlo/"
+      },
+      {
+        "id": 6,
+        "titulo": "Planificación para la jubilación",
+        "descripcion": "Consejos para asegurar una jubilación cómoda.",
+        "url": "https://www.investopedia.com/retirement-planning-5188053"
+      },
+      {
+        "id": 7,
+        "titulo": "Seguros básicos",
+        "descripcion": "Tipos de seguros y su importancia en la protección financiera.",
+        "url": "https://www.consumerreports.org/cro/health-insurance/basics/index.htm"
+      },
+      {
+        "id": 8,
+        "titulo": "Impuestos personales",
+        "descripcion": "Cómo entender y manejar tus impuestos anuales.",
+        "url": "https://www.irs.gov/es"
+      },
+      {
+        "id": 9,
+        "titulo": "Gestión de deudas",
+        "descripcion": "Métodos para reducir y manejar tus deudas efectivamente.",
+        "url": "https://www.experian.com/blogs/ask-experian/how-to-manage-debt-effectively/"
+      },
+      {
+        "id": 10,
+        "titulo": "Educación financiera para jóvenes",
+        "descripcion": "Material para enseñar finanzas básicas a adolescentes.",
+        "url": "https://www.jumpstart.org/what-we-do/support-financial-education/financial-literacy-month/"
+      }
+    ],
+    "consejos": [
+      {
+        "id": 1,
+        "titulo": "Ahorra primero",
+        "descripcion": "Destina una parte de tus ingresos al ahorro antes de gastar."
+      },
+      {
+        "id": 2,
+        "titulo": "Evita gastos hormiga",
+        "descripcion": "Pequeños gastos diarios pueden afectar tu presupuesto mensual."
+      },
+      {
+        "id": 3,
+        "titulo": "Usa el crédito con responsabilidad",
+        "descripcion": "No gastes más de lo que puedes pagar al final del mes."
+      },
+      {
+        "id": 4,
+        "titulo": "Ten un fondo de emergencia",
+        "descripcion": "Reserva dinero para imprevistos y evita endeudarte."
+      },
+      {
+        "id": 5,
+        "titulo": "Invierte en tu educación",
+        "descripcion": "El conocimiento financiero es una inversión que rinde a largo plazo."
+      },
+      {
+        "id": 6,
+        "titulo": "Revisa tus gastos mensualmente",
+        "descripcion": "Haz un seguimiento para identificar áreas de mejora."
+      },
+      {
+        "id": 7,
+        "titulo": "Evita las deudas innecesarias",
+        "descripcion": "Solo utiliza crédito para compras planeadas y necesarias."
+      },
+      {
+        "id": 8,
+        "titulo": "Diversifica tus inversiones",
+        "descripcion": "No pongas todos tus recursos en un solo lugar."
+      },
+      {
+        "id": 9,
+        "titulo": "Planifica para el futuro",
+        "descripcion": "Ahorra pensando en metas a largo plazo como la jubilación."
+      },
+      {
+        "id": 10,
+        "titulo": "Usa tecnología financiera",
+        "descripcion": "Herramientas digitales pueden ayudarte a gestionar mejor tu dinero."
+      }
+    ],
+    "microlecciones": [
+      {
+        "id": 1,
+        "tema": "Diferencia entre activos y pasivos",
+        "contenido": "Un activo pone dinero en tu bolsillo, un pasivo lo saca.",
+        "nivel": "básico"
+      },
+      {
+        "id": 2,
+        "tema": "Interés simple vs compuesto",
+        "contenido": "El interés compuesto genera intereses sobre intereses, a diferencia del simple.",
+        "nivel": "intermedio"
+      },
+      {
+        "id": 3,
+        "tema": "Diversificación",
+        "contenido": "No pongas todos tus huevos en una sola canasta: diversifica tus inversiones.",
+        "nivel": "intermedio"
+      },
+      {
+        "id": 4,
+        "tema": "Inflación",
+        "contenido": "La inflación reduce el poder adquisitivo de tu dinero con el tiempo.",
+        "nivel": "básico"
+      },
+      {
+        "id": 5,
+        "tema": "Score crediticio",
+        "contenido": "Tu historial de pagos y deuda impacta tu puntaje de crédito.",
+        "nivel": "avanzado"
+      },
+      {
+        "id": 6,
+        "tema": "Importancia del presupuesto",
+        "contenido": "Controlar ingresos y gastos te ayuda a evitar deudas.",
+        "nivel": "básico"
+      },
+      {
+        "id": 7,
+        "tema": "Fondos de emergencia",
+        "contenido": "Un colchón financiero para imprevistos reduce estrés y riesgos.",
+        "nivel": "básico"
+      },
+      {
+        "id": 8,
+        "tema": "Impacto de los intereses",
+        "contenido": "Los intereses pueden hacer crecer o aumentar tus deudas rápidamente.",
+        "nivel": "intermedio"
+      },
+      {
+        "id": 9,
+        "tema": "Crédito responsable",
+        "contenido": "Usar crédito con cuidado mejora tu score y evita problemas financieros.",
+        "nivel": "intermedio"
+      },
+      {
+        "id": 10,
+        "tema": "Planificación financiera",
+        "contenido": "Establecer metas claras facilita alcanzar estabilidad económica.",
+        "nivel": "avanzado"
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "texto": "¿Qué es el interés compuesto?",
+        "opciones": ["Un impuesto", "Interés sobre interés", "Gasto fijo"],
+        "recomendacion": "Recuerda que el interés compuesto es cuando ganas intereses sobre intereses acumulados.",
+        "correcta": "Interés sobre interés",
+        "imagen": "https://www.bbva.com/wp-content/uploads/2020/01/interes-compuesto.jpg"
+      },
+      {
+        "id": 2,
+        "texto": "¿Qué representa un activo?",
+        "opciones": ["Un gasto mensual", "Una deuda", "Algo que genera ingresos"],
+        "recomendacion": "Un activo es algo que pone dinero en tu bolsillo, como una inversión.",
+        "correcta": "Algo que genera ingresos",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/10714/10714732.png"
+      },
+      {
+        "id": 3,
+        "texto": "¿Qué es la inflación?",
+        "opciones": ["Aumento del valor del dinero", "Disminución del valor del dinero", "Un impuesto"],
+        "recomendacion": "La inflación hace que tu dinero pierda poder adquisitivo con el tiempo.",
+        "correcta": "Disminución del valor del dinero",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/3929/3929720.png"
+      },
+      {
+        "id": 4,
+        "texto": "¿Cuál es un buen hábito financiero?",
+        "opciones": ["Gastar primero, ahorrar después", "Ahorrar lo que sobra", "Ahorrar antes de gastar"],
+        "recomendacion": "Ahorrar primero te asegura construir un colchón financiero.",
+        "correcta": "Ahorrar antes de gastar",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+      },
+      {
+        "id": 5,
+        "texto": "¿Qué significa diversificar tus inversiones?",
+        "opciones": ["Invertir todo en una sola opción", "No invertir", "Distribuir el dinero en varias inversiones"],
+        "recomendacion": "Diversificar reduce el riesgo de perderlo todo.",
+        "correcta": "Distribuir el dinero en varias inversiones",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+      },
+      {
+        "id": 6,
+        "texto": "¿Qué es un pasivo?",
+        "opciones": ["Algo que genera dinero", "Una deuda o gasto", "Una inversión a largo plazo"],
+        "recomendacion": "Un pasivo es algo que saca dinero de tu bolsillo como préstamos o tarjetas.",
+        "correcta": "Una deuda o gasto",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/5481/5481222.png"
+      },
+      {
+        "id": 7,
+        "texto": "¿Cuál es el objetivo de un fondo de emergencia?",
+        "opciones": ["Invertir en la bolsa", "Pagar deudas", "Cubrir imprevistos sin endeudarse"],
+        "recomendacion": "Un fondo de emergencia te protege ante imprevistos como enfermedades o pérdida de empleo.",
+        "correcta": "Cubrir imprevistos sin endeudarse",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/944/944535.png"
+      },
+      {
+        "id": 8,
+        "texto": "¿Qué es el score crediticio?",
+        "opciones": ["Una nota de la escuela", "Un puntaje de tus hábitos financieros", "El saldo de tu cuenta bancaria"],
+        "recomendacion": "Tu score crediticio refleja tu comportamiento de pago y es clave para futuros préstamos.",
+        "correcta": "Un puntaje de tus hábitos financieros",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/10880/10880655.png"
+      },
+      {
+        "id": 9,
+        "texto": "¿Qué es una inversión a largo plazo?",
+        "opciones": ["Ganar dinero rápido", "Una compra inmediata", "Un activo que crece con el tiempo"],
+        "recomendacion": "Las inversiones a largo plazo permiten hacer crecer tu patrimonio con menos riesgo.",
+        "correcta": "Un activo que crece con el tiempo",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/1087/1087412.png"
+      },
+      {
+        "id": 10,
+        "texto": "¿Cuál es la mejor forma de usar una tarjeta de crédito?",
+        "opciones": ["Pagar solo el mínimo", "Pagar el total cada mes", "No pagarla nunca"],
+        "recomendacion": "Pagar el total cada mes evita intereses y protege tu historial crediticio.",
+        "correcta": "Pagar el total cada mes",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/942/942751.png"
+      },
+      {
+        "id": 11,
+        "texto": "¿Por qué es importante tener un presupuesto?",
+        "opciones": ["Para saber cuánto gastar", "Para evitar deudas", "Para ambas cosas"],
+        "recomendacion": "Un presupuesto ayuda a controlar gastos y evitar problemas financieros.",
+        "correcta": "Para ambas cosas",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/4300/4300836.png"
+      },
+      {
+        "id": 12,
+        "texto": "¿Qué es diversificar?",
+        "opciones": ["Invertir en varias opciones", "Invertir todo en una opción", "No invertir"],
+        "recomendacion": "Diversificar reduce riesgos al distribuir inversiones.",
+        "correcta": "Invertir en varias opciones",
+        "imagen": "https://cdn-icons-png.flaticon.com/512/833/833472.png"
+      }
+    ]
+  }
+}
+

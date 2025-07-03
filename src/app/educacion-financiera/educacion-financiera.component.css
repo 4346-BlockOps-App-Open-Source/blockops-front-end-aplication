@@ -1,0 +1,43 @@
+section {
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section h1 {
+  font-size: 2.5rem;
+  color: #007bff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+section h2 {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: #008bff;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.shadow-sm {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.p-4 {
+  padding: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}

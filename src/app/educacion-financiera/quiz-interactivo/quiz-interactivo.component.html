@@ -1,0 +1,27 @@
+<div class="quiz">
+  <div *ngFor="let pregunta of preguntas; let i = index" class="pregunta-card">
+    <h3>{{ pregunta.texto }}</h3>
+    <ul>
+      <li *ngFor="let opcion of pregunta.opciones">
+        <button
+          [disabled]="estadoPreguntas[i]"
+          (click)="verificarRespuesta(i, opcion)">
+          {{ opcion }}
+        </button>
+      </li>
+    </ul>
+    <p
+      [ngClass]="{
+        'respuesta-correcta': respuestasUsuario[i] === '✅ ¡Correcto!',
+        'respuesta-incorrecta': respuestasUsuario[i] === '❌ Incorrecto'
+      }">
+      {{ respuestasUsuario[i] }}
+    </p>
+    <p *ngIf="recomendaciones[i]" class="recomendacion">💡 {{ recomendaciones[i] }}</p>
+  </div>
+
+  <div *ngIf="puntajeFinal !== null" class="resultado-final">
+    <h2>🎉 ¡Felicidades! Obtuviste {{ puntajeFinal }}/4 respuestas correctas.</h2>
+    <button (click)="reiniciarQuiz()">🔄 Nuevo Quiz</button>
+  </div>
+</div>

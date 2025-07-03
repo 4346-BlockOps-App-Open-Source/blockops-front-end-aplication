@@ -1,0 +1,11 @@
+<div class="recursos-container">
+  <div *ngFor="let recurso of recursos" class="recurso-card">
+    <div class="recurso-icono">
+      <img src="https://cdn-icons-png.flaticon.com/512/4221/4221434.png" alt="icon" />
+    </div>
+    <div class="recurso-info">
+      <h3>{{ recurso.titulo }}</h3>
+      <a [href]="recurso.url" target="_blank" class="recurso-link">Ver recurso</a>
+    </div>
+  </div>
+</div>

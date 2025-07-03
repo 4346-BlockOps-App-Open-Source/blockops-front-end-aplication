@@ -1,0 +1,10 @@
+<section class="risk-container">
+  <h2>Selecciona tu perfil de riesgo</h2>
+  <div class="options">
+    <label *ngFor="let option of ['conservador', 'moderado', 'agresivo']">
+      <input type="radio" name="risk" [value]="option" [(ngModel)]="riskProfile" />
+      {{ option | titlecase }}
+    </label>
+  </div>
+  <button (click)="submitProfile()" [disabled]="!riskProfile">Continuar</button>
+</section>

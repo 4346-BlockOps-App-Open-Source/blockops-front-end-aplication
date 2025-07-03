@@ -1,0 +1,357 @@
+{
+  "NAV": {
+    "MAIN": "Home",
+    "ABOUT": "About",
+    "HOW_IT_WORKS": "How it works",
+    "PRICING": "Pricing",
+    "CONTACT": "Contact"
+  },
+  "HERO": {
+    "TITLE": "Invest smarter, grow faster",
+    "SUBTITLE": "All-in-one platform for crypto signals",
+    "DESCRIPTION": "Join thousands of investors optimizing their crypto strategy",
+    "START_BUTTON": "Start now"
+  },
+  "ABOUT": {
+    "TITLE": "About Capitalent",
+    "P1": "Capitalent offers cutting-edge crypto insights.",
+    "P2": "We help you make informed trading decisions with ease.",
+    "TAGS": {
+      "REALTIME": "Real-time Alerts",
+      "SMART_ENGINE": "Smart Engine",
+      "SIMPLICITY": "Simplicity"
+    }
+  },
+  "HOW_WORKS": {
+    "TITLE": "How it works",
+    "TRACK": {
+      "TITLE": "Track",
+      "DESCRIPTION": "Monitor market trends effortlessly"
+    },
+    "ANALYZE": {
+      "TITLE": "Analyze",
+      "DESCRIPTION": "Use our smart tools to analyze data"
+    },
+    "SIGNAL": {
+      "TITLE": "Signal",
+      "DESCRIPTION": "Receive instant buy/sell signals"
+    }
+  },
+  "PRICING": {
+    "TITLE": "Our Pricing",
+    "STANDARD": {
+      "TITLE": "Standard Plan",
+      "LABEL": "Free",
+      "FEATURE1": "Real-time alerts",
+      "FEATURE2": "Basic analytics",
+      "FEATURE3": "Community access"
+    },
+    "PRO": {
+      "TITLE": "Pro Plan",
+      "LABEL": "Recommended",
+      "FEATURE1": "Advanced signals",
+      "FEATURE2": "Priority support",
+      "FEATURE3": "Exclusive insights"
+    },
+    "START_FREE": "Start Free",
+    "BUY_NOW": "Buy Now"
+  },
+  "CONTACT": {
+    "TITLE": "Contact Us",
+    "NAME_PLACEHOLDER": "Your Name",
+    "EMAIL_PLACEHOLDER": "Your Email",
+    "MESSAGE_PLACEHOLDER": "Your Message",
+    "SEND": "Send"
+  },
+  "FOOTER": {
+    "RIGHTS": "All rights reserved."
+  },
+  "ALERTS": {
+    "START_NOW": "Let's get started!",
+    "CONTACT_SUCCESS": "Thank you {{name}}! We have received your message: {{message}}. We will contact you at {{email}} soon.",
+    "FILL_ALL_FIELDS": "Please fill all fields.",
+    "PLAN_FREE": "You selected the Free plan!",
+    "PLAN_PRO": "You selected the Pro plan!"
+  },
+  "SIGNALS":
+  {
+    "TITLE": "Live Signals",
+    "SAMPLE_TITLE": "Bitcoin Buy Signal",
+    "SAMPLE_DESC": "Buy BTC now due to breakout.",
+    "DETAILS_TITLE": "Signal Details"
+  },
+
+  "IDIOMA": "Change Language",
+  "EDUCACION_FINANCIERA": {
+    "TITULO": "Financial Education",
+    "DESCRIPCION": "Explore tips, resources, and learn through play to improve your financial health.",
+    "CONSEJOS": "Quick Tips",
+    "BIBLIOTECA": "Resource Library",
+    "MICROLECCIONES": "Technical Micro-lessons",
+    "QUIZ": "Interactive Quiz",
+    "VOLVER": "Back to Top"
+  },
+  "en": {
+    "biblioteca": [
+      {
+        "id": 1,
+        "title": "Personal Budget",
+        "description": "Learn how to create and maintain an effective budget.",
+        "url": "https://bettermoneyhabits.bankofamerica.com/saving-budgeting/creating-a-budget"
+      },
+      {
+        "id": 2,
+        "title": "Smart Saving",
+        "description": "Strategies to save and reach your financial goals.",
+        "url": "https://www.viabcp.com/blog-bcp/ahorro-automatico-estrategias-para-ahorrar"
+      },
+      {
+        "id": 3,
+        "title": "Basic Investments",
+        "description": "Introductory guide to the world of investments.",
+        "url": "https://www.bbva.com/en/financial-health/what-are-financial-investments-and-types/"
+      },
+      {
+        "id": 4,
+        "title": "Credit and Debt",
+        "description": "How to use credit responsibly.",
+        "url": "https://www.bbva.com/en/financial-health/what-is-debt-what-is-it-for-and-how-to-measure-financial-indebtedness/"
+      },
+      {
+        "id": 5,
+        "title": "Emergency Fund",
+        "description": "How and why to build a fund for unforeseen events.",
+        "url": "https://www.bbva.com/en/financial-health/how-to-make-an-emergency-fund-and-where-to-keep-it/"
+      },
+      {
+        "id": 6,
+        "title": "Retirement Planning",
+        "description": "Tips for securing a comfortable retirement.",
+        "url": "https://www.investopedia.com/retirement-planning-5188053"
+      },
+      {
+        "id": 7,
+        "title": "Basic Insurance",
+        "description": "Types of insurance and their importance in financial protection.",
+        "url": "https://www.consumerreports.org/cro/health-insurance/basics/index.htm"
+      },
+      {
+        "id": 8,
+        "title": "Personal Taxes",
+        "description": "How to understand and manage your annual taxes.",
+        "url": "https://www.irs.gov/"
+      },
+      {
+        "id": 9,
+        "title": "Debt Management",
+        "description": "Methods to effectively reduce and manage your debts.",
+        "url": "https://www.experian.com/blogs/ask-experian/how-to-manage-debt-effectively/"
+      },
+      {
+        "id": 10,
+        "title": "Financial Education for Youth",
+        "description": "Materials to teach basic finances to teenagers.",
+        "url": "https://www.jumpstart.org/what-we-do/support-financial-education/financial-literacy-month/"
+      }
+    ],
+    "tips": [
+      {
+        "id": 1,
+        "title": "Save first",
+        "description": "Set aside part of your income for saving before spending."
+      },
+      {
+        "id": 2,
+        "title": "Avoid small daily expenses",
+        "description": "Small daily expenses can affect your monthly budget."
+      },
+      {
+        "id": 3,
+        "title": "Use credit responsibly",
+        "description": "Don't spend more than you can pay at the end of the month."
+      },
+      {
+        "id": 4,
+        "title": "Have an emergency fund",
+        "description": "Reserve money for unforeseen events and avoid debt."
+      },
+      {
+        "id": 5,
+        "title": "Invest in your education",
+        "description": "Financial knowledge is an investment that pays off long-term."
+      },
+      {
+        "id": 6,
+        "title": "Review your expenses monthly",
+        "description": "Track expenses to identify areas for improvement."
+      },
+      {
+        "id": 7,
+        "title": "Avoid unnecessary debts",
+        "description": "Only use credit for planned and necessary purchases."
+      },
+      {
+        "id": 8,
+        "title": "Diversify your investments",
+        "description": "Don't put all your resources in one place."
+      },
+      {
+        "id": 9,
+        "title": "Plan for the future",
+        "description": "Save thinking about long-term goals like retirement."
+      },
+      {
+        "id": 10,
+        "title": "Use financial technology",
+        "description": "Digital tools can help you manage your money better."
+      }
+    ],
+    "microlessons": [
+      {
+        "id": 1,
+        "topic": "Difference between assets and liabilities",
+        "content": "An asset puts money in your pocket, a liability takes it out.",
+        "level": "basic"
+      },
+      {
+        "id": 2,
+        "topic": "Simple vs compound interest",
+        "content": "Compound interest earns interest on interest, unlike simple interest.",
+        "level": "intermediate"
+      },
+      {
+        "id": 3,
+        "topic": "Diversification",
+        "content": "Don't put all your eggs in one basket: diversify your investments.",
+        "level": "intermediate"
+      },
+      {
+        "id": 4,
+        "topic": "Inflation",
+        "content": "Inflation reduces your money's purchasing power over time.",
+        "level": "basic"
+      },
+      {
+        "id": 5,
+        "topic": "Credit score",
+        "content": "Your payment history and debt affect your credit score.",
+        "level": "advanced"
+      },
+      {
+        "id": 6,
+        "topic": "Importance of budgeting",
+        "content": "Tracking income and expenses helps avoid debt.",
+        "level": "basic"
+      },
+      {
+        "id": 7,
+        "topic": "Emergency funds",
+        "content": "A financial cushion for unforeseen events reduces stress and risk.",
+        "level": "basic"
+      },
+      {
+        "id": 8,
+        "topic": "Impact of interest",
+        "content": "Interest can make your debt grow fast or your savings increase.",
+        "level": "intermediate"
+      },
+      {
+        "id": 9,
+        "topic": "Responsible credit use",
+        "content": "Using credit wisely improves your score and prevents financial trouble.",
+        "level": "intermediate"
+      },
+      {
+        "id": 10,
+        "topic": "Financial planning",
+        "content": "Setting clear goals makes it easier to achieve financial stability.",
+        "level": "advanced"
+      }
+    ],
+    "quiz": [
+      {
+        "id": 1,
+        "text": "What is compound interest?",
+        "options": ["A tax", "Interest on interest", "Fixed expense"],
+        "recommendation": "Remember that compound interest means earning interest on accumulated interest.",
+        "correct": "Interest on interest",
+        "image": "https://www.bbva.com/wp-content/uploads/2020/01/interes-compuesto.jpg"
+      },
+      {
+        "id": 2,
+        "text": "What does an asset represent?",
+        "options": ["A monthly expense", "A debt", "Something that generates income"],
+        "recommendation": "An asset is something that puts money in your pocket, like an investment.",
+        "correct": "Something that generates income",
+        "image": "https://cdn-icons-png.flaticon.com/512/10714/10714732.png"
+      },
+      {
+        "id": 3,
+        "text": "What is inflation?",
+        "options": ["Increase in money value", "Decrease in money value", "A tax"],
+        "recommendation": "Inflation makes your money lose purchasing power over time.",
+        "correct": "Decrease in money value",
+        "image": "https://cdn-icons-png.flaticon.com/512/3929/3929720.png"
+      },
+      {
+        "id": 4,
+        "text": "What is a good financial habit?",
+        "options": ["Spend first, save later", "Save what is left", "Save before spending"],
+        "recommendation": "Saving first ensures you build a financial cushion.",
+        "correct": "Save before spending",
+        "image": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+      },
+      {
+        "id": 5,
+        "text": "What does it mean to diversify your investments?",
+        "options": ["Invest everything in one option", "Not invest", "Spread money across several investments"],
+        "recommendation": "Diversification reduces the risk of losing everything.",
+        "correct": "Spread money across several investments",
+        "image": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+      },
+      {
+        "id": 6,
+        "text": "What is a liability?",
+        "options": ["Something that generates money", "A debt or expense", "A long-term investment"],
+        "recommendation": "A liability takes money out of your pocket, like loans or credit cards.",
+        "correct": "A debt or expense",
+        "image": "https://cdn-icons-png.flaticon.com/512/5481/5481222.png"
+      },
+      {
+        "id": 7,
+        "text": "What is the purpose of an emergency fund?",
+        "options": ["Invest in the stock market", "Pay debts", "Cover unforeseen events without debt"],
+        "recommendation": "An emergency fund helps avoid using credit in emergencies.",
+        "correct": "Cover unforeseen events without debt",
+        "image": "https://cdn-icons-png.flaticon.com/512/616/616408.png"
+      },
+      {
+        "id": 8,
+        "text": "How does responsible credit use benefit you?",
+        "options": ["Improves credit score", "Leads to debt", "No effect"],
+        "recommendation": "Using credit wisely builds your credit score and financial reputation.",
+        "correct": "Improves credit score",
+        "image": "https://cdn-icons-png.flaticon.com/512/833/833314.png"
+      },
+      {
+        "id": 9,
+        "text": "What is the main advantage of budgeting?",
+        "options": ["Knowing where money goes", "Spending without limits", "Ignoring expenses"],
+        "recommendation": "Budgeting helps control finances and avoid debt.",
+        "correct": "Knowing where money goes",
+        "image": "https://cdn-icons-png.flaticon.com/512/747/747376.png"
+      },
+      {
+        "id": 10,
+        "text": "Why should you plan for retirement early?",
+        "options": ["Because it's mandatory", "To ensure financial stability later", "It's not necessary"],
+        "recommendation": "Early planning allows your money to grow and provides peace of mind.",
+        "correct": "To ensure financial stability later",
+        "image": "https://cdn-icons-png.flaticon.com/512/2920/2920547.png"
+      }
+    ]
+  }
+}
+
+
+

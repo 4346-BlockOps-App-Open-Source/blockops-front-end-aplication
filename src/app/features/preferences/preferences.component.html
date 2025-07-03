@@ -1,0 +1,21 @@
+<section class="preferences-container">
+  <h2>Preferencias de señales</h2>
+
+  <div class="checkbox-group">
+    <label *ngFor="let activo of activosDisponibles">
+      <input
+        type="checkbox"
+        [checked]="preferences.activos.includes(activo)"
+        (change)="toggleActivo(activo)"
+      />
+      {{ activo }}
+    </label>
+  </div>
+
+  <label class="toggle">
+    <input type="checkbox" [(ngModel)]="preferences.recibirNotificaciones" />
+    Recibir notificaciones
+  </label>
+
+  <button (click)="savePreferences()">Guardar preferencias</button>
+</section>

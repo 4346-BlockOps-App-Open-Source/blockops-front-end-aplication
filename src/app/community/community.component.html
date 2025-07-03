@@ -1,0 +1,58 @@
+﻿<div class="contenedor">
+  <!-- Perfil público -->
+  <section class="perfil">
+    <h2>Mi Perfil</h2>
+    <label>
+      <input type="checkbox" [(ngModel)]="publicMode" />
+      Activar modo público
+    </label>
+
+    <div *ngIf="publicMode" class="publico">
+      <p>📊 Señales seguidas: {{ usuario.senalesSeguidas }}</p>
+      <p>🎓 Nivel educativo: {{ usuario.nivelEducativo }}</p>
+      <p>⭐ Reputación en foros: {{ usuario.reputacion }}</p>
+    </div>
+  </section>
+
+  <!-- Foro de comunidad -->
+  <section class="foro">
+    <h2>Foro de la Comunidad</h2>
+    <textarea [(ngModel)]="nuevaPublicacion" placeholder="Escribe una nueva publicación..."></textarea>
+    <button (click)="crearPublicacion()">Publicar</button>
+
+    <div *ngFor="let post of posts; index as i" class="post">
+      <div class="cabecera"><strong>{{ post.autor }}</strong> dice:</div>
+      <div class="contenido">{{ post.contenido }}</div>
+
+      <div class="respuestas">
+        <div *ngFor="let r of post.respuestas">
+          <em>{{ r }}</em>
+        </div>
+      </div>
+
+      <textarea [(ngModel)]="nuevasRespuestas[i]" placeholder="Responder..."></textarea>
+      <button (click)="responder(i)">Responder</button>
+
+      <div *ngIf="post.notificaciones > 0" class="notificacion" (click)="limpiarNotificaciones(i)">
+        🔔 {{ post.notificaciones }} nueva(s) respuesta(s)
+      </div>
+    </div>
+  </section>
+
+  <!-- Tabla de reputación -->
+  <section class="reputacion">
+    <h2>Usuarios Destacados</h2>
+    <table>
+      <tr>
+        <th>Usuario</th>
+        <th>Reputación</th>
+        <th>Respuestas</th>
+      </tr>
+      <tr *ngFor="let u of usuarios">
+        <td>{{ u.nombre }}</td>
+        <td>{{ u.reputacion }}</td>
+        <td>{{ u.respuestas }}</td>
+      </tr>
+    </table>
+  </section>
+</div>

@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e2f;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.toolbar .tools {
+  display: flex;
+  gap: 20px;
+}
+
+.toolbar .tools a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.toolbar .tools a:hover {
+  color: #00d8ff;
+}
+
+.toolbar .user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.toolbar .user img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.toolbar .user span {
+  font-size: 0.95em;
+}
+
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .toolbar .tools {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
