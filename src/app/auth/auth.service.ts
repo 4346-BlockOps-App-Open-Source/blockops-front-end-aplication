@@ -11,16 +11,18 @@ export interface User {
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private apiUrl = 'http://localhost:3000/users';
+  private apiUrl = 'http://localhost:8080/registroonboarding';
 
   constructor(private http: HttpClient) {}
 
   register(user: User): Observable<User> {
-    return this.http.post<User>(this.apiUrl, user);
+    // POST a /registroonboarding/registro
+    return this.http.post<User>(`${this.apiUrl}/registro`, user);
   }
 
   login(email: string, password: string): Observable<User[]> {
-    return this.http.get<User[]>(`${this.apiUrl}?email=${email}&password=${password}`);
+    // GET a /registroonboarding/usuarios?email=...&password=...
+    return this.http.get<User[]>(`${this.apiUrl}/usuarios?email=${email}&password=${password}`);
   }
 }
 
