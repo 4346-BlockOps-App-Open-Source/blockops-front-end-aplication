@@ -1,6 +1,6 @@
 <section class="register-container">
   <h2>Crear cuenta</h2>
-<form (ngSubmit)="onRegister($event)">
+  <form (ngSubmit)="onRegister($event)">
     <div class="form-group">
       <label for="name">Nombre</label>
       <input id="name" type="text" [(ngModel)]="user.name" name="name" required />
@@ -16,6 +16,33 @@
       <input id="password" type="password" [(ngModel)]="user.password" name="password" required />
     </div>
 
-    <button type="submit">Registrar</button>
+    <div class="form-group">
+      <label>Perfil de riesgo</label>
+      <div class="options radio-group">
+        <label *ngFor="let option of riskProfiles">
+          <input type="radio" name="riskProfile" [value]="option" [(ngModel)]="user.riskProfile" required />
+          {{ option | titlecase }}
+        </label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Preferencias</label>
+      <div class="options checkbox-group">
+        <label *ngFor="let active of preferenceChoices">
+          <input type="checkbox"
+                 [checked]="user.preferences?.includes(active)"
+                 (change)="togglePreference(active)"
+                 [value]="active" name="preference_{{active}}" />
+          {{active}}
+        </label>
+      </div>
+    </div>
+
+    <div *ngIf="registerError" class="error-message">{{ registerError }}</div>
+
+    <button type="submit" [disabled]="loading">
+      {{ loading ? 'Registrando...' : 'Registrar' }}
+    </button>
   </form>
 </section>
