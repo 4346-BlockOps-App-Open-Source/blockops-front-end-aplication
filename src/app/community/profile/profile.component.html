@@ -1,0 +1,13 @@
+﻿<div class="profile">
+  <label>
+    <input type="checkbox" [(ngModel)]="publicMode" />
+    Activar modo público
+  </label>
+
+  <div *ngIf="publicMode" class="public-info">
+    <h3>Perfil Público</h3>
+    <p>📊 Señales seguidas: {{ user.followedSignals }}</p>
+    <p>🎓 Nivel educativo: {{ user.educationLevel }}</p>
+    <p>⭐ Reputación en foros: {{ user.forumReputation }}</p>
+  </div>
+</div>

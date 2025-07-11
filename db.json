@@ -1,0 +1,45 @@
+{
+  "users": [
+    {
+      "id": "7122",
+      "email": "llerenarenzo123@gmail.com",
+      "password": "60790465",
+      "name": "Renzo Llerena"
+    },
+    {
+      "id": "3bc8",
+      "email": "example123@gmai.com",
+      "password": "123456",
+      "name": "Renzo",
+      "riskProfile": "moderado",
+      "preferences": [
+        "Bonos"
+      ]
+    },
+    {
+      "id": "5785",
+      "email": "llerenarenzo123@gmail.com",
+      "password": "456789",
+      "name": "Renzo",
+      "riskProfile": "conservador",
+      "preferences": [
+        "Acciones"
+      ]
+    }
+  ],
+  "preferencias": [
+    {
+      "id": "1",
+      "usuarioId": "7122",
+      "lenguaje": "es",
+      "tema": "oscuro"
+    }
+  ],
+  "perfilRiesgo": [
+    {
+      "id": "1",
+      "usuarioId": "7122",
+      "riesgo": "moderado"
+    }
+  ]
+}

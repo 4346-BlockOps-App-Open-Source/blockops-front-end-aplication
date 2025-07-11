@@ -1,0 +1,83 @@
+<!-- Bloque de demo de integración API -->
+<div style="margin:2rem 0;border:1px solid #ddd;padding:1rem;background:#f8f8ff;">
+  <h3>API - Señales (Signals)</h3>
+  <ul>
+    <li *ngFor="let signal of signals">{{ signal | json }}</li>
+  </ul>
+  <h3>API - Quizzes</h3>
+  <ul>
+    <li *ngFor="let quiz of quizzes">{{ quiz | json }}</li>
+  </ul>
+  <h3>API - Microlecciones</h3>
+  <ul>
+    <li *ngFor="let micro of microlecciones">{{ micro | json }}</li>
+  </ul>
+  <h3>API - Consejos</h3>
+  <ul>
+    <li *ngFor="let consejo of consejos">{{ consejo | json }}</li>
+  </ul>
+  <h3>API - Biblioteca</h3>
+  <ul>
+    <li *ngFor="let biblio of biblioteca">{{ biblio | json }}</li>
+  </ul>
+</div>
+
+<!-- El resto del template original EDUCACION FINANCIERA permanece intacto abajo -->
+
+<section class="container my-5 px-3">
+  <div class="d-flex justify-content-end align-items-center mb-4 gap-2" aria-label="Selector de idioma">
+    <button
+      type="button"
+      class="btn btn-sm d-flex align-items-center gap-1"
+      [class.btn-outline-primary]="idiomaSeleccionado !== 'es'"
+      [class.btn-primary]="idiomaSeleccionado === 'es'"
+      (click)="cambiarIdioma('es')"
+      aria-label="Cambiar a español">
+      <span role="img" aria-hidden="true">🇪🇸</span>
+      <span>ES</span>
+    </button>
+
+    <button
+      type="button"
+      class="btn btn-sm d-flex align-items-center gap-1"
+      [class.btn-outline-primary]="idiomaSeleccionado !== 'en'"
+      [class.btn-primary]="idiomaSeleccionado === 'en'"
+      (click)="cambiarIdioma('en')"
+      aria-label="Cambiar a inglés">
+      <span role="img" aria-hidden="true">🇺🇸</span>
+      <span>EN</span>
+    </button>
+  </div>
+
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold text-primary">💰 {{ 'EDUCACION_FINANCIERA.TITULO' | translate }}</h1>
+    <p class="lead text-muted">{{ 'EDUCACION_FINANCIERA.DESCRIPCION' | translate }}</p>
+  </div>
+
+  <div class="mb-5 p-4 bg-light rounded shadow-sm">
+    <h2 class="h4 mb-3 text-success">🌟 {{ 'EDUCACION_FINANCIERA.CONSEJOS' | translate }}</h2>
+    <consejos-rapidos></consejos-rapidos>
+  </div>
+
+  <div class="mb-5 p-4 bg-white rounded shadow-sm border">
+    <h2 class="h4 mb-3 text-info">📚 {{ 'EDUCACION_FINANCIERA.BIBLIOTECA' | translate }}</h2>
+    <app-biblioteca-recursos></app-biblioteca-recursos>
+  </div>
+
+  <div class="mb-5 p-4 bg-light rounded shadow-sm">
+    <h2 class="h4 mb-3 text-warning">🎓 {{ 'EDUCACION_FINANCIERA.MICROLECCIONES' | translate }}</h2>
+    <app-microlecciones-tecnico></app-microlecciones-tecnico>
+  </div>
+
+  <div class="mb-5 p-4 bg-white rounded shadow-sm border">
+    <h2 class="h4 mb-3 text-danger">🧠 {{ 'EDUCACION_FINANCIERA.QUIZ' | translate }}</h2>
+    <app-quiz-interactivo></app-quiz-interactivo>
+  </div>
+
+  <!-- Botón para volver a /dashboard -->
+  <div class="text-center mt-4">
+    <a routerLink="/dashboard" class="btn btn-primary btn-lg">
+      🔝 {{ 'EDUCACION_FINANCIERA.VOLVER' | translate }}
+    </a>
+  </div>
+</section>

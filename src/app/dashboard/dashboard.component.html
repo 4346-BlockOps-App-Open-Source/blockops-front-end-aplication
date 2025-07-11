@@ -1,0 +1,47 @@
+<div class="dashboard-container">
+<div class="toolbar-lateral">
+  <div class="logo">
+    <i class="fas fa-coins"></i>
+  </div>
+<nav class="tools">
+<button class="tools-btn" (click)="router.navigate(['/educacion'])" title="Educación financiera"><i class="fas fa-graduation-cap"></i></button>
+<button class="tools-btn" (click)="router.navigate(['/comunidad'])" title="Comunidad"><i class="fas fa-users"></i></button>
+<button class="tools-btn" (click)="router.navigate(['/notificaciones'])" title="Notificaciones"><i class="fas fa-bell"></i></button>
+<button class="tools-btn" (click)="router.navigate(['/signal-list'])" title="Lista de señales"><i class="fas fa-signal"></i></button>
+<button class="logout-btn" (click)="logout()" title="Cerrar sesión"><i class="fas fa-sign-out-alt"></i></button>
+  </nav>
+</div>
+
+  <div class="signals-contenido">
+    <h2>Resumen Diario de Movimientos Clave</h2>
+    <ul>
+      <li *ngFor="let signal of dailySummary">
+        {{ signal.date | date:'shortTime' }} - {{ signal.type | uppercase }} {{ signal.symbol }} a ${{ signal.price }}
+      </li>
+    </ul>
+
+    <h2>Señales en Vivo</h2>
+    <div class="live-signals-grid">
+      <div class="signal-card" *ngFor="let signal of signals" (click)="selectSignal(signal)" [class.buy]="signal.type==='buy'" [class.sell]="signal.type==='sell'">
+        <div class="signal-card-header">
+          <span class="signal-type">{{ signal.type === 'buy' ? 'Comprar' : 'Vender' }}</span>
+          <span class="signal-symbol">{{ signal.symbol }}</span>
+        </div>
+        <div class="signal-card-body">
+          <span class="signal-price">${{ signal.price }}</span>
+          <span class="signal-date">{{ signal.date | date:'shortTime' }}</span>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="selectedSignal" class="explanation">
+      <h3>Explicación de la señal</h3>
+      <p><strong>Tipo:</strong> {{ selectedSignal.type }}</p>
+      <p><strong>Activo:</strong> {{ selectedSignal.symbol }}</p>
+      <p><strong>Precio:</strong> ${{ selectedSignal.price }}</p>
+      <p><strong>Motivo:</strong> {{ selectedSignal.reason }}</p>
+      <p><strong>Fecha:</strong> {{ selectedSignal.date | date:'medium' }}</p>
+      <button (click)="closeExplanation()">Cerrar</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<h2>Señales de Criptomonedas</h2>
+
+<form (ngSubmit)="createSignal()" class="form">
+  <div class="field">
+    <label>Cripto:</label>
+    <input type="text" [(ngModel)]="cryptoName" name="cryptoName" required />
+  </div>
+
+  <div class="field">
+    <label>Precio Nuevo:</label>
+    <input type="number" [(ngModel)]="newPrice" name="newPrice" required />
+  </div>
+
+  <div class="field">
+    <label>Precio Anterior:</label>
+    <input type="number" [(ngModel)]="oldPrice" name="oldPrice" required />
+  </div>
+
+  <button type="submit" class="btn">Enviar</button>
+</form>
+
+<hr />
+
+<ul class="signal-list">
+  <li *ngFor="let signal of signals" [ngClass]="signal.type">
+    <span class="name">{{ signal.symbol }}</span>
+    <span class="price">${{ signal.price }}</span>
+    <span class="recommendation">{{ signal.type === 'buy' ? 'Comprar' : 'Vender' }}</span>
+    <span class="time">{{ signal.date | date: 'short' }}</span>
+    <span class="reason" *ngIf="signal.reason">{{ signal.reason }}</span>
+  </li>

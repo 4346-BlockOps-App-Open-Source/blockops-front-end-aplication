@@ -1,0 +1,15 @@
+﻿<div class="reputation">
+  <h3>Usuarios Destacados</h3>
+  <table>
+    <tr>
+      <th>Usuario</th>
+      <th>Reputación</th>
+      <th>Respuestas</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{ user.name }}</td>
+      <td>{{ user.reputation }}</td>
+      <td>{{ user.responses }}</td>
+    </tr>
+  </table>
+</div>

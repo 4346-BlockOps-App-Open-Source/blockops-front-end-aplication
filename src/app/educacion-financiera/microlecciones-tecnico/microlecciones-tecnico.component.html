@@ -1,0 +1,7 @@
+<div class="lecciones-container">
+  <div class="leccion-card" *ngFor="let leccion of lecciones">
+    <img [src]="leccion.imagen" alt="{{ leccion.titulo }}" />
+    <h3>{{ leccion.titulo }}</h3>
+    <p>{{ leccion.contenido }}</p>
+  </div>
+</div>
