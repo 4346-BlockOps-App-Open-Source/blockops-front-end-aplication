@@ -1,0 +1,255 @@
+{
+  "biblioteca": [
+    {
+      "id": 1,
+      "titulo": "Presupuesto personal",
+      "descripcion": "Aprende a crear y mantener un presupuesto efectivo.",
+      "url": "https://bettermoneyhabits.bankofamerica.com/es/saving-budgeting/creating-a-budget"
+    },
+    {
+      "id": 2,
+      "titulo": "Ahorro inteligente",
+      "descripcion": "Estrategias para ahorrar y alcanzar tus metas financieras.",
+      "url": "https://www.viabcp.com/blog-bcp/ahorro-automatico-estrategias-para-ahorrar"
+    },
+    {
+      "id": 3,
+      "titulo": "Inversiones básicas",
+      "descripcion": "Guía introductoria al mundo de las inversiones.",
+      "url": "https://www.bbva.com/es/salud-financiera/que-son-las-inversiones-financieras-y-que-tipos-existen/"
+    },
+    {
+      "id": 4,
+      "titulo": "Crédito y deuda",
+      "descripcion": "Cómo usar el crédito de manera responsable.",
+      "url": "https://www.bbva.com/es/salud-financiera/que-es-la-deuda-para-que-sirve-y-como-se-mide-el-endeudamiento-financiero/"
+    },
+    {
+      "id": 5,
+      "titulo": "Fondo de emergencia",
+      "descripcion": "Cómo y por qué construir un fondo para imprevistos.",
+      "url": "https://www.bbva.com/es/salud-financiera/como-hacer-un-fondo-de-emergencia-y-donde-guardarlo/"
+    }
+  ],
+  "consejos": [
+    {
+      "id": 1,
+      "titulo": "Ahorra primero",
+      "descripcion": "Destina una parte de tus ingresos al ahorro antes de gastar."
+    },
+    {
+      "id": 2,
+      "titulo": "Evita gastos hormiga",
+      "descripcion": "Pequeños gastos diarios pueden afectar tu presupuesto mensual."
+    },
+    {
+      "id": 3,
+      "titulo": "Usa el crédito con responsabilidad",
+      "descripcion": "No gastes más de lo que puedes pagar al final del mes."
+    },
+    {
+      "id": 4,
+      "titulo": "Ten un fondo de emergencia",
+      "descripcion": "Reserva dinero para imprevistos y evita endeudarte."
+    },
+    {
+      "id": 5,
+      "titulo": "Invierte en tu educación",
+      "descripcion": "El conocimiento financiero es una inversión que rinde a largo plazo."
+    },
+    {
+      "id": 6,
+      "titulo": "Revisa tus suscripciones",
+      "descripcion": "Cancela servicios que no usas para optimizar tu presupuesto."
+    },
+    {
+      "id": 7,
+      "titulo": "Planifica tus gastos grandes",
+      "descripcion": "Anticipa y ahorra para compras importantes evitando deudas."
+    },
+    {
+      "id": 8,
+      "titulo": "Automatiza tus ahorros",
+      "descripcion": "Configura transferencias automáticas para asegurar el ahorro."
+    },
+    {
+      "id": 9,
+      "titulo": "Conoce tus ingresos y egresos",
+      "descripcion": "Lleva un control detallado para identificar oportunidades de ahorro."
+    },
+    {
+      "id": 10,
+      "titulo": "Diversifica tus inversiones",
+      "descripcion": "No pongas todos tus recursos en un solo lugar para reducir riesgos."
+    }
+  ],
+  "microlecciones": [
+    {
+      "id": 1,
+      "tema": "Diferencia entre activos y pasivos",
+      "contenido": "Un activo pone dinero en tu bolsillo, un pasivo lo saca.",
+      "nivel": "básico"
+    },
+    {
+      "id": 2,
+      "tema": "Interés simple vs compuesto",
+      "contenido": "El interés compuesto genera intereses sobre intereses, a diferencia del simple.",
+      "nivel": "intermedio"
+    },
+    {
+      "id": 3,
+      "tema": "Diversificación",
+      "contenido": "No pongas todos tus huevos en una sola canasta: diversifica tus inversiones.",
+      "nivel": "intermedio"
+    },
+    {
+      "id": 4,
+      "tema": "Inflación",
+      "contenido": "La inflación reduce el poder adquisitivo de tu dinero con el tiempo.",
+      "nivel": "básico"
+    },
+    {
+      "id": 5,
+      "tema": "Score crediticio",
+      "contenido": "Tu historial de pagos y deuda impacta tu puntaje de crédito.",
+      "nivel": "avanzado"
+    },
+    {
+      "id": 6,
+      "tema": "Liquidez",
+      "contenido": "Es la facilidad con la que puedes convertir un activo en efectivo sin perder valor.",
+      "nivel": "básico"
+    },
+    {
+      "id": 7,
+      "tema": "Presupuesto base cero",
+      "contenido": "Asignar cada peso a una categoría hasta que tu ingreso menos gastos sea cero.",
+      "nivel": "intermedio"
+    },
+    {
+      "id": 8,
+      "tema": "Riesgo vs retorno",
+      "contenido": "Las inversiones con mayor potencial de ganancia suelen implicar más riesgo.",
+      "nivel": "intermedio"
+    },
+    {
+      "id": 9,
+      "tema": "Inflación y tasa de interés",
+      "contenido": "La tasa de interés real es la tasa nominal menos la inflación.",
+      "nivel": "avanzado"
+    },
+    {
+      "id": 10,
+      "tema": "Planificación financiera",
+      "contenido": "Es fundamental para lograr objetivos a corto, mediano y largo plazo.",
+      "nivel": "básico"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "texto": "¿Qué es el interés compuesto?",
+      "opciones": ["Un impuesto", "Interés sobre interés", "Gasto fijo"],
+      "recomendacion": "Recuerda que el interés compuesto es cuando ganas intereses sobre intereses acumulados.",
+      "correcta": "Interés sobre interés",
+      "imagen": "https://www.bbva.com/wp-content/uploads/2020/01/interes-compuesto.jpg"
+    },
+    {
+      "id": 2,
+      "texto": "¿Qué representa un activo?",
+      "opciones": ["Un gasto mensual", "Una deuda", "Algo que genera ingresos"],
+      "recomendacion": "Un activo es algo que pone dinero en tu bolsillo, como una inversión.",
+      "correcta": "Algo que genera ingresos",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/10714/10714732.png"
+    },
+    {
+      "id": 3,
+      "texto": "¿Qué es la inflación?",
+      "opciones": ["Aumento del valor del dinero", "Disminución del valor del dinero", "Un impuesto"],
+      "recomendacion": "La inflación hace que tu dinero pierda poder adquisitivo con el tiempo.",
+      "correcta": "Disminución del valor del dinero",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/3929/3929720.png"
+    },
+    {
+      "id": 4,
+      "texto": "¿Cuál es un buen hábito financiero?",
+      "opciones": ["Gastar primero, ahorrar después", "Ahorrar lo que sobra", "Ahorrar antes de gastar"],
+      "recomendacion": "Ahorrar primero te asegura construir un colchón financiero.",
+      "correcta": "Ahorrar antes de gastar",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/1828/1828884.png"
+    },
+    {
+      "id": 5,
+      "texto": "¿Qué significa diversificar tus inversiones?",
+      "opciones": ["Invertir todo en una sola opción", "No invertir", "Distribuir el dinero en varias inversiones"],
+      "recomendacion": "Diversificar reduce el riesgo de perderlo todo.",
+      "correcta": "Distribuir el dinero en varias inversiones",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+    },
+    {
+      "id": 6,
+      "texto": "¿Qué es un pasivo?",
+      "opciones": ["Algo que genera dinero", "Una deuda o gasto", "Una inversión a largo plazo"],
+      "recomendacion": "Un pasivo es algo que saca dinero de tu bolsillo como préstamos o tarjetas.",
+      "correcta": "Una deuda o gasto",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/5481/5481222.png"
+    },
+    {
+      "id": 7,
+      "texto": "¿Cuál es el objetivo de un fondo de emergencia?",
+      "opciones": ["Invertir en la bolsa", "Pagar deudas", "Cubrir imprevistos sin endeudarse"],
+      "recomendacion": "Un fondo de emergencia te protege ante imprevistos como enfermedades o pérdida de empleo.",
+      "correcta": "Cubrir imprevistos sin endeudarse",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/944/944535.png"
+    },
+    {
+      "id": 8,
+      "texto": "¿Qué es el score crediticio?",
+      "opciones": ["Una nota de la escuela", "Un puntaje de tus hábitos financieros", "El saldo de tu cuenta bancaria"],
+      "recomendacion": "Tu score crediticio refleja tu comportamiento de pago y es clave para futuros préstamos.",
+      "correcta": "Un puntaje de tus hábitos financieros",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/10880/10880655.png"
+    },
+    {
+      "id": 9,
+      "texto": "¿Qué es una inversión a largo plazo?",
+      "opciones": ["Ganar dinero rápido", "Una compra inmediata", "Un activo que crece con el tiempo"],
+      "recomendacion": "Las inversiones a largo plazo permiten hacer crecer tu patrimonio con menos riesgo.",
+      "correcta": "Un activo que crece con el tiempo",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/1087/1087412.png"
+    },
+    {
+      "id": 10,
+      "texto": "¿Cuál es la mejor forma de usar una tarjeta de crédito?",
+      "opciones": ["Pagar solo el mínimo", "Pagar el total cada mes", "No pagarla nunca"],
+      "recomendacion": "Pagar el total cada mes evita intereses y protege tu historial crediticio.",
+      "correcta": "Pagar el total cada mes",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/942/942751.png"
+    },
+    {
+      "id": 11,
+      "texto": "¿Qué es la liquidez?",
+      "opciones": ["La facilidad para convertir un activo en efectivo", "La cantidad de dinero que ganas", "La cantidad de deuda que tienes"],
+      "recomendacion": "La liquidez es la facilidad de convertir un activo en efectivo sin perder valor.",
+      "correcta": "La facilidad para convertir un activo en efectivo",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/2534/2534105.png"
+    },
+    {
+      "id": 12,
+      "texto": "¿Qué es un presupuesto base cero?",
+      "opciones": ["Un presupuesto sin gastos", "Asignar cada peso a una categoría hasta que no sobre dinero", "Un presupuesto anual"],
+      "recomendacion": "En el presupuesto base cero, cada peso tiene un destino asignado.",
+      "correcta": "Asignar cada peso a una categoría hasta que no sobre dinero",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/2620/2620423.png"
+    },
+    {
+      "id": 13,
+      "texto": "¿Qué implica diversificar inversiones?",
+      "opciones": ["Poner dinero en diferentes activos para reducir riesgo", "Invertir solo en acciones", "No invertir en nada"],
+      "recomendacion": "Diversificar es clave para reducir riesgos financieros.",
+      "correcta": "Poner dinero en diferentes activos para reducir riesgo",
+      "imagen": "https://cdn-icons-png.flaticon.com/512/2917/2917996.png"
+    }
+  ]
+}
+
